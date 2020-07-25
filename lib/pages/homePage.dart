@@ -56,7 +56,7 @@ class HomePageState extends State<HomePage> {
     }else {
       print("测试第二下");
     }
-    listData = ['常用组件','测试chanel','向原生ios弹框传值','数据库操作'];
+    listData = ['Dart基础','常用组件','测试chanel','向原生ios弹框传值','数据库操作','多线程'];
     eventChannel
         .receiveBroadcastStream().listen((Object event) {
           _onEvent(event);
@@ -116,8 +116,12 @@ class HomePageState extends State<HomePage> {
                                  DateOperatePage()
                              )
                          );
+                       }else if (title == 'Dart基础') {
+                         Navigator.pushNamed(context, '/DartBasicPage');
+                       }else if (title == '多线程') {
+                         Navigator.pushNamed(context, '/MoreThreadPage');
                        }
-                      },
+    },
                       child: Container(
                         height: 53,
                         child: Column(

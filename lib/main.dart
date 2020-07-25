@@ -7,6 +7,8 @@ import 'package:flutter_app/pages/basicWidget/basic_animation_page.dart';
 import 'package:flutter_app/pages/login/login_page.dart';
 import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/myPagee.dart';
+import 'package:flutter_app/pages/other/dart_basic_page.dart';
+import 'package:flutter_app/pages/other/more_thead_page.dart';
 import 'package:oktoast/oktoast.dart';
 
 void main() {
@@ -69,7 +71,9 @@ class MyApp extends StatelessWidget {
           '/PageA': (BuildContext context) =>  MyPage(title: 'page A'),
           '/PageB': (BuildContext context) =>  MyPage(title: 'page B'),
           '/BasicContainer': (BuildContext context) => BasicContainerPage(),
-          'BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
+          '/BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
+          '/DartBasicPage': (BuildContext context) => DartBasicPage(),
+          '/MoreThreadPage': (BuildContext context) => MoreThreadPage(),
         },
 //      onGenerateRoute: Application.router.generator,
       ),

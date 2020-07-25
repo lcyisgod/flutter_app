@@ -2,10 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a611ff07-2a8f-4bc6-a92b-13ea4442b756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/pages/other/dart_basic_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/other/more_thead_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCore.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/path_provider/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/path_provider/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCore.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/path_provider.framework/path_provider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/basicWidget/basic_animation_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/basicWidget/basic_animation_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/basicWidget/basic_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/basicWidget/basic_widget_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/homePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/homePage.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state relative-caret-position="53">
+              <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -35,33 +74,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/pages/basicWidget/basic_animation_page.dart">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pages/homePage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="138" column="16" lean-forward="true" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+            <state relative-caret-position="-147">
+              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
               <folding>
-                <element signature="e#1043#1277#0" />
-                <element signature="e#1308#2529#0" />
-                <element signature="e#2554#2811#0" />
-                <element signature="e#2842#3647#0" />
-                <element signature="e#3672#3877#0" />
-                <element signature="e#3908#4519#0" />
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/pages/other/more_thead_page.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
+        <entry file="file://$PROJECT_DIR$/lib/pages/basicWidget/basic_widget_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3390">
-              <caret line="240" column="28" selection-start-line="240" selection-start-column="14" selection-end-line="240" selection-end-column="28" />
+            <state relative-caret-position="165">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>具体信息是</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,12 +128,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/pages/basicWidget/basic_animation_page.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/basicWidget/basic_widget_page.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/other/dart_basic_page.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/homePage.dart" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/other/more_thead_page.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="78" />
+    <option name="x" value="56" />
+    <option name="y" value="57" />
     <option name="width" value="1294" />
     <option name="height" value="794" />
   </component>
@@ -109,13 +172,20 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="basicWidget" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="flutter_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,21 +231,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="147" y="71" width="1294" height="794" extended-state="0" />
+    <frame x="56" y="57" width="1294" height="794" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3514377" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.35702875" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Resources Explorer" order="6" weight="0.3298722" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32905984" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.45726496" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
@@ -190,24 +262,16 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="dart-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="240" column="28" selection-start-line="240" selection-start-column="14" selection-end-line="240" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/transitions.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -217,15 +281,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/basicWidget/basic_animation_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="138" column="16" lean-forward="true" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+        <state relative-caret-position="32">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/main_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#1043#1277#0" />
-            <element signature="e#1308#2529#0" />
-            <element signature="e#2554#2811#0" />
-            <element signature="e#2842#3647#0" />
-            <element signature="e#3672#3877#0" />
-            <element signature="e#3908#4519#0" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/navigator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="1523" column="19" selection-start-line="1523" selection-start-column="19" selection-end-line="1523" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/bin/cache/pkg/sky_engine/lib/core/set.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/other/dart_basic_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/animation/animation_controller.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="240" column="28" selection-start-line="240" selection-start-column="14" selection-end-line="240" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/basicWidget/basic_widget_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/homePage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/material/ink_well.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="780" column="2" selection-start-line="780" selection-start-column="2" selection-end-line="780" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/scheduler/binding.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="953" column="49" selection-start-line="953" selection-start-column="49" selection-end-line="953" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/bin/cache/pkg/sky_engine/lib/async/future.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="602" column="12" selection-start-line="602" selection-start-column="12" selection-end-line="602" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/other/more_thead_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

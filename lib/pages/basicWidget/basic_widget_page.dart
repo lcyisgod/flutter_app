@@ -9,7 +9,7 @@ class BasicWidgetPage extends StatelessWidget{
       if (title == 'Container') {
         Navigator.pushNamed(context, '/BasicContainer');
       }else if (title == '动画组件') {
-        Navigator.pushNamed(context, 'BasicAnimationPage');
+        Navigator.pushNamed(context, '/BasicAnimationPage');
       }
     }
 
