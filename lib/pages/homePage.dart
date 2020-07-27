@@ -120,8 +120,7 @@ class HomePageState extends State<HomePage> {
                          Navigator.pushNamed(context, '/DartBasicPage');
                        }else if (title == '多线程') {
                          Navigator.pushNamed(context, '/MoreThreadPage');
-                       }
-    },
+                       }},
                       child: Container(
                         height: 53,
                         child: Column(

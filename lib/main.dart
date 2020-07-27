@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/pages/basicWidget/basci_container.dart';
 import 'package:flutter_app/pages/basicWidget/basic_animation_page.dart';
+import 'package:flutter_app/pages/basicWidget/basic_text_page.dart';
 import 'package:flutter_app/pages/login/login_page.dart';
 import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/myPagee.dart';
 import 'package:flutter_app/pages/other/dart_basic_page.dart';
 import 'package:flutter_app/pages/other/more_thead_page.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:oktoast/oktoast.dart';
 
 void main() {
@@ -45,38 +47,41 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OKToast(
-        child: MaterialApp(
-        title: 'Flutter Demo',
-        //使用系统控件的风格数据
-        theme: ThemeData(
-          //导航栏背景色
-          primarySwatch: Colors.blue,
-          //背景色
-          scaffoldBackgroundColor: Colors.white,
-          //输入框的占位文字颜色
-          hintColor: Colors.red,
+        child: FlutterEasyLoading(
+            child: MaterialApp(
+              title: 'Flutter Demo',
+              //使用系统控件的风格数据
+              theme: ThemeData(
+                //导航栏背景色
+                primarySwatch: Colors.blue,
+                //背景色
+                scaffoldBackgroundColor: Colors.white,
+                //输入框的占位文字颜色
+                hintColor: Colors.red,
+              ),
+              darkTheme: ThemeData(
+                //暗黑模式
+                primarySwatch: Colors.red,
+                scaffoldBackgroundColor: Colors.orange,
+                hintColor: Colors.blue,
+              ),
+              home: MyHomePage(title: '测试'),
+              //路由表
+              //此处为静态路由,及界面的入参在创建时就固定了
+              routes: <String, WidgetBuilder>{
+                '/Login': (BuildContext context) =>  LoginPage(),
+                '/Home': (BuildContext context) =>  MainPage(),
+                '/PageA': (BuildContext context) =>  MyPage(title: 'page A'),
+                '/PageB': (BuildContext context) =>  MyPage(title: 'page B'),
+                '/BasicContainer': (BuildContext context) => BasicContainerPage(),
+                '/BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
+                '/DartBasicPage': (BuildContext context) => DartBasicPage(),
+                '/MoreThreadPage': (BuildContext context) => MoreThreadPage(),
+                '/BasicTextPage': (BuildContext context) => BasicTextPage()
+              },
+//              onGenerateRoute: Application.router.generator,
+            )
         ),
-        darkTheme: ThemeData(
-          //暗黑模式
-          primarySwatch: Colors.red,
-          scaffoldBackgroundColor: Colors.orange,
-          hintColor: Colors.blue,
-        ),
-        home: MyHomePage(title: '测试'),
-        //路由表
-        //此处为静态路由,及界面的入参在创建时就固定了
-        routes: <String, WidgetBuilder>{
-          '/Login': (BuildContext context) =>  LoginPage(),
-          '/Home': (BuildContext context) =>  MainPage(),
-          '/PageA': (BuildContext context) =>  MyPage(title: 'page A'),
-          '/PageB': (BuildContext context) =>  MyPage(title: 'page B'),
-          '/BasicContainer': (BuildContext context) => BasicContainerPage(),
-          '/BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
-          '/DartBasicPage': (BuildContext context) => DartBasicPage(),
-          '/MoreThreadPage': (BuildContext context) => MoreThreadPage(),
-        },
-//      onGenerateRoute: Application.router.generator,
-      ),
         textPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
         radius: 20.0,
         position: ToastPosition.bottom
