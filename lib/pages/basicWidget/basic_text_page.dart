@@ -22,6 +22,9 @@ class BasicTextPageState extends State<BasicTextPage> {
 
   @override
   Widget build(BuildContext context) {
+    //获取路由参数
+    var args = ModalRoute.of(context).settings.arguments;
+    print('路由参数为$args');
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
@@ -66,12 +69,22 @@ class BasicTextPageState extends State<BasicTextPage> {
                               style: TextStyle(fontSize: 14, color: Colors.blue),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  Navigator.push<void>(
-                                      context,
-                                      MaterialPageRoute<WebViewPage>(builder: (_)=> WebViewPage(
-                                        title: '网页',
-                                        baseUrl: 'https://www.baidu.com',
-                                      )));
+                                   var obj = Navigator.push<void>(
+                                       context,
+                                       MaterialPageRoute<WebViewPage>(
+                                          builder: (context){
+                                            return WebViewPage(
+                                              title: '网页',
+                                              baseUrl: 'https://www.baidu.com',
+                                            );
+                                          },
+                                      )
+                                   ).then((dynamic value){//界面在返回之后调用该方法
+                                     print('界面返回了');
+                                   });
+                                   obj.then((value) {
+                                     print('返回值是$value');
+                                   });
                                 },
                             ),
                             TextSpan(

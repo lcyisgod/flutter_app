@@ -11,7 +11,8 @@ class BasicWidgetPage extends StatelessWidget{
       }else if (title == '动画组件') {
         Navigator.pushNamed(context, '/BasicAnimationPage');
       }else if (title == '文本') {
-        Navigator.pushNamed(context, '/BasicTextPage');
+        //通过命名路由传递参数
+        Navigator.pushNamed(context, '/BasicTextPage', arguments: 'hi');
       }
     }
 

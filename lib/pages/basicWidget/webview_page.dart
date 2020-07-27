@@ -51,11 +51,18 @@ class WebViewPageState extends State<WebViewPage> {
       appBar: AppBar(
         title: Text(centerTitle??''),
         centerTitle: true,
+        actions: <Widget>[
+          FlatButton(
+              onPressed: (){
+                Navigator.pop(context);// 往回传一个数组
+              },
+              child: Text('返回'))
+        ],
       ),
       body: WebView(
         initialUrl: widget.baseUrl,
         javascriptMode: JavascriptMode.unrestricted,
-        onWebViewCreated: (controller){
+        onWebViewCreated: (WebViewController controller){
           Toast.show('网页创建完成');
           //获取网页控制器
           _controller = controller;

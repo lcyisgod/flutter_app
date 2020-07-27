@@ -79,6 +79,8 @@ class MyApp extends StatelessWidget {
                 '/MoreThreadPage': (BuildContext context) => MoreThreadPage(),
                 '/BasicTextPage': (BuildContext context) => BasicTextPage()
               },
+              //在路由中做一些动态权限，如某些界面需要登录才能访问
+              //使用onGenerateRoute时不能使用路由表
 //              onGenerateRoute: Application.router.generator,
             )
         ),
