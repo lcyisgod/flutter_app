@@ -4,31 +4,52 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/pages/basicWidget/basci_container.dart';
 import 'package:flutter_app/pages/basicWidget/basic_animation_page.dart';
+import 'package:flutter_app/pages/basicWidget/basic_image_page.dart';
 import 'package:flutter_app/pages/basicWidget/basic_text_page.dart';
 import 'package:flutter_app/pages/login/login_page.dart';
 import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/pages/myPagee.dart';
 import 'package:flutter_app/pages/other/dart_basic_page.dart';
+import 'package:flutter_app/pages/other/error_detail_page.dart';
 import 'package:flutter_app/pages/other/more_thead_page.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:oktoast/oktoast.dart';
 
-void main() {
+//处理Framework异常(弹出红色界面的异常)？
+//只能收到本界面的异常?
+Future<Null> _reportError(dynamic error, dynamic stackTrace) async {
+  print('catch error=');
+  print(error);
+}
 
-  Future<Null> _reportError(dynamic error, dynamic stackTrace) async {
-    print('catch error: $error');
-    print('具体信息是$stackTrace');
-  }
+void test(ZoneDelegate parent, Zone zone,String line) async {
+  parent.print(zone,'打印日志收集$line');
+}
 
-  FlutterError.onError = (FlutterErrorDetails details) async{
+void test2(String line) async {
+  print('打印日志收集2:$line');
+}
+
+void main() async{
+
+  FlutterError.onError = (FlutterErrorDetails details) async {
+//    FlutterError.dumpErrorToConsole(details);
     Zone.current.handleUncaughtError(details.exception, details.stack);
   };
 
   runZonedGuarded<Future<Null>>(() async {
     runApp(MyApp());
-  }, (Object error, StackTrace stackTrance) async{
-    await _reportError(error, stackTrance);
-  });
+  },(dynamic error, StackTrace stackTrace) async {
+    //异常处理
+    await _reportError(error, stackTrace);
+  }, zoneSpecification: ZoneSpecification(
+    //输出打印日志
+      print: (Zone self, ZoneDelegate parent, Zone zone, String line) {
+//        test2(line);
+        test(parent, zone, line);
+//        parent.print(zone, "打印收集: $line");
+      },
+  ));
 
   //监听设备的旋转方向
   SystemChrome.setPreferredOrientations(
@@ -77,7 +98,9 @@ class MyApp extends StatelessWidget {
                 '/BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
                 '/DartBasicPage': (BuildContext context) => DartBasicPage(),
                 '/MoreThreadPage': (BuildContext context) => MoreThreadPage(),
-                '/BasicTextPage': (BuildContext context) => BasicTextPage()
+                '/BasicTextPage': (BuildContext context) => BasicTextPage(),
+                '/BasicImagePage': (BuildContext context) => BasicImagePage(),
+                '/ErrorDetailPage': (BuildContext context) => ErrorDetailPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
@@ -167,5 +190,12 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text('测试首页'),
           )),
     );
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    print('主界面销毁了');
+    super.dispose();
   }
 }

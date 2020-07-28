@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class MoreThreadPage extends StatefulWidget {
@@ -71,7 +69,7 @@ class MoreThreadPageState extends State<MoreThreadPage> {
     return title;
   }
 
-  Future<Void> testAsync2() async {
+  Future<Null> testAsync2() async {
     print('kkkk');
   }
 

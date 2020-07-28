@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BasicWidgetPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    var dataList = ['Container','动画组件','文本'];
+    var dataList = ['Container','动画组件','文本','图片'];
 
     Future<void> clickEvent(String title) async {
       if (title == 'Container') {
@@ -13,6 +13,8 @@ class BasicWidgetPage extends StatelessWidget{
       }else if (title == '文本') {
         //通过命名路由传递参数
         Navigator.pushNamed(context, '/BasicTextPage', arguments: 'hi');
+      }else if (title == '图片') {
+        Navigator.pushNamed(context, '/BasicImagePage');
       }
     }
 

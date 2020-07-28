@@ -54,7 +54,9 @@ class WebViewPageState extends State<WebViewPage> {
         actions: <Widget>[
           FlatButton(
               onPressed: (){
-                Navigator.pop(context);// 往回传一个数组
+                //会存储Widget树的状态,并在控制台打印输出
+//                debugDumpApp();
+                Navigator.pop(context);
               },
               child: Text('返回'))
         ],
