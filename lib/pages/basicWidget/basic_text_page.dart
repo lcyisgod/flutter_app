@@ -40,15 +40,27 @@ class BasicTextPageState extends State<BasicTextPage> {
                 children: <Widget>[
                   Container(
                    width: double.infinity,
-                   height: 44,
+                   alignment: Alignment(0, 0),
                    child:  Text(
-                       '这是一段普通文本',
+                     '这是一段普通文本',
                      textAlign: TextAlign.center,
+                     //主要是用于系统字体大小设置改变时对Flutter应用字体进行全局调整
+                     textScaleFactor: 1.0,
+                     style: TextStyle(
+                       color: Colors.red,
+                       //该属性用于指定行高
+                       //但它并不是一个绝对值，而是一个因子
+                       //具体的行高等于fontSize*height。
+                       height: 1.2,
+                       //fontSize通常用于单个文本，字体大小不会跟随系统字体大小变化
+                       fontSize: 12,
+                     ),
                    ),
                   ),
                   Divider(),
                   Container(
                     width: double.infinity,
+                    alignment: Alignment(0, 0),
                     height: 44,
                     child:  Text(
                       '下面是一段富文本',

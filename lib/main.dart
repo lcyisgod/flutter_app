@@ -2,8 +2,9 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/pages/basicWidget/basci_container.dart';
 import 'package:flutter_app/pages/basicWidget/basic_animation_page.dart';
+import 'package:flutter_app/pages/basicWidget/basic_button_page.dart';
+import 'package:flutter_app/pages/basicWidget/basic_container.dart';
 import 'package:flutter_app/pages/basicWidget/basic_image_page.dart';
 import 'package:flutter_app/pages/basicWidget/basic_text_page.dart';
 import 'package:flutter_app/pages/login/login_page.dart';
@@ -101,6 +102,7 @@ class MyApp extends StatelessWidget {
                 '/BasicTextPage': (BuildContext context) => BasicTextPage(),
                 '/BasicImagePage': (BuildContext context) => BasicImagePage(),
                 '/ErrorDetailPage': (BuildContext context) => ErrorDetailPage(),
+                '/BasicButtonPage': (BuildContext context) => BasicButtonPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
