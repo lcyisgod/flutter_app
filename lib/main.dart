@@ -2,19 +2,24 @@ import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/pages/basicWidget/basic_animation_page.dart';
-import 'package:flutter_app/pages/basicWidget/basic_button_page.dart';
-import 'package:flutter_app/pages/basicWidget/basic_container.dart';
-import 'package:flutter_app/pages/basicWidget/basic_image_page.dart';
-import 'package:flutter_app/pages/basicWidget/basic_text_page.dart';
-import 'package:flutter_app/pages/login/login_page.dart';
-import 'package:flutter_app/pages/main_page.dart';
-import 'package:flutter_app/pages/myPagee.dart';
-import 'package:flutter_app/pages/other/dart_basic_page.dart';
-import 'package:flutter_app/pages/other/error_detail_page.dart';
-import 'package:flutter_app/pages/other/more_thead_page.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:oktoast/oktoast.dart';
+
+import 'pages/Home/basicWidget/basic_animation_page.dart';
+import 'pages/Home/basicWidget/basic_button_page.dart';
+import 'pages/Home/basicWidget/basic_container.dart';
+import 'pages/Home/basicWidget/basic_form_page.dart';
+import 'pages/Home/basicWidget/basic_image_page.dart';
+import 'pages/Home/basicWidget/basic_progress_page.dart';
+import 'pages/Home/basicWidget/basic_switch_page.dart';
+import 'pages/Home/basicWidget/basic_text_page.dart';
+import 'pages/Home/basicWidget/basic_textform_page.dart';
+import 'pages/Home/other/dart_basic_page.dart';
+import 'pages/Home/other/error_detail_page.dart';
+import 'pages/Home/other/more_thead_page.dart';
+import 'pages/Mine/my_pagee.dart';
+import 'pages/Login/login_page.dart';
+import 'pages/main_page.dart';
 
 //处理Framework异常(弹出红色界面的异常)？
 //只能收到本界面的异常?
@@ -103,6 +108,10 @@ class MyApp extends StatelessWidget {
                 '/BasicImagePage': (BuildContext context) => BasicImagePage(),
                 '/ErrorDetailPage': (BuildContext context) => ErrorDetailPage(),
                 '/BasicButtonPage': (BuildContext context) => BasicButtonPage(),
+                '/BasicSwitchPage': (BuildContext context) => BasicSwitchPage(),
+                '/BasicTextFormPage': (BuildContext context) => BasicTextFormPage(),
+                '/BasicFormPage': (BuildContext context) => BasicFormPage(),
+                '/BasicProgressPage': (BuildContext context) => BasicProgressPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表

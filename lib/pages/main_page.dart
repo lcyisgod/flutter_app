@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/homePage.dart';
-import 'package:flutter_app/pages/myPagee.dart';
+
+import 'Home/home_page.dart';
+import 'Mine/my_pagee.dart';
 
 class MainPage extends StatefulWidget {
   @override
