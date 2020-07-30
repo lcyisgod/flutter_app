@@ -108,24 +108,27 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
                                  BasicWidgetPage()
                              )
                          );
-                       }else if (title == '测试chanel') {
+                       } else if (title == '测试chanel') {
                          _getBatteryLevel();
-                       }else if (title == '向原生ios弹框传值') {
+                       } else if (title == '向原生ios弹框传值') {
                          _showIosAlert();
-                       }else if (title == '数据库操作') {
+                       } else if (title == '数据库操作') {
                          Navigator.push<void>(
                              context,
                              MaterialPageRoute<DateOperatePage>(builder: (BuildContext context)=>
                                  DateOperatePage()
                              )
                          );
-                       }else if (title == 'Dart基础') {
+                       } else if (title == 'Dart基础') {
                          Navigator.pushNamed(context, '/DartBasicPage');
-                       }else if (title == '多线程') {
+                       } else if (title == '多线程') {
                          Navigator.pushNamed(context, '/MoreThreadPage');
-                       }else if (title == '异常处理') {
+                       } else if (title == '异常处理') {
                          Navigator.pushNamed(context, '/ErrorDetailPage');
-                       }},
+                       } else if(title == '布局类组件') {
+                         Navigator.pushNamed(context, '/LayoutWidgetPage');
+                       }
+                      },
                       child: Container(
                         height: 53,
                         child: Column(

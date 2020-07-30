@@ -14,6 +14,12 @@ import 'pages/Home/basicWidget/basic_progress_page.dart';
 import 'pages/Home/basicWidget/basic_switch_page.dart';
 import 'pages/Home/basicWidget/basic_text_page.dart';
 import 'pages/Home/basicWidget/basic_textform_page.dart';
+import 'pages/Home/layoutWidget/aligning_layout_page.dart';
+import 'pages/Home/layoutWidget/layout_widget_page.dart';
+import 'pages/Home/layoutWidget/line_layout_page.dart';
+import 'pages/Home/layoutWidget/space_layout_page.dart';
+import 'pages/Home/layoutWidget/stack_layout_page.dart';
+import 'pages/Home/layoutWidget/water_layout_page.dart';
 import 'pages/Home/other/dart_basic_page.dart';
 import 'pages/Home/other/error_detail_page.dart';
 import 'pages/Home/other/more_thead_page.dart';
@@ -112,6 +118,12 @@ class MyApp extends StatelessWidget {
                 '/BasicTextFormPage': (BuildContext context) => BasicTextFormPage(),
                 '/BasicFormPage': (BuildContext context) => BasicFormPage(),
                 '/BasicProgressPage': (BuildContext context) => BasicProgressPage(),
+                '/LayoutWidgetPage': (BuildContext context) => LayoutWidgetPage(),
+                '/LineLayoutPage': (BuildContext context) => LineLayoutPage(),
+                '/SpaceLayoutPage': (BuildContext context) => SpaceLayoutPage(),
+                '/WaterLayoutPage': (BuildContext context) => WaterLayoutPage(),
+                '/StackLayoutPage': (BuildContext context) => StackLayoutPage(),
+                '/AligningLayoutPage': (BuildContext context) => AligningLayoutPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
