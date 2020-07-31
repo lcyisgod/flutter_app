@@ -23,6 +23,11 @@ import 'pages/Home/layoutWidget/water_layout_page.dart';
 import 'pages/Home/other/dart_basic_page.dart';
 import 'pages/Home/other/error_detail_page.dart';
 import 'pages/Home/other/more_thead_page.dart';
+import 'pages/Home/vesselWidget/limit_size_widget_page.dart';
+import 'pages/Home/vesselWidget/nav_widget_page.dart';
+import 'pages/Home/vesselWidget/padding_widget_page.dart';
+import 'pages/Home/vesselWidget/transform_widget_page.dart';
+import 'pages/Home/vesselWidget/vessel_widget_page.dart';
 import 'pages/Mine/my_pagee.dart';
 import 'pages/Login/login_page.dart';
 import 'pages/main_page.dart';
@@ -124,6 +129,11 @@ class MyApp extends StatelessWidget {
                 '/WaterLayoutPage': (BuildContext context) => WaterLayoutPage(),
                 '/StackLayoutPage': (BuildContext context) => StackLayoutPage(),
                 '/AligningLayoutPage': (BuildContext context) => AligningLayoutPage(),
+                '/VesselWidgetPage': (BuildContext context) => VesselWidgetPage(),
+                '/PaddingWidgetPage': (BuildContext context) => PaddingWidgetPage(),
+                '/LimitSizeWidgetPage': (BuildContext context) => LimitSizeWidgetPage(),
+                '/TransformWidgetPage': (BuildContext context) => TransformWidgetPage(),
+                '/NavWidgetPage': (BuildContext context) => NavWidgetPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表

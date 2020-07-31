@@ -62,6 +62,8 @@ class MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      //底部导航组件
+      //用于展示有多个模块时
       bottomNavigationBar: BottomNavigationBar(
         items: List.generate(
             _appBarTitles.length,

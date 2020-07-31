@@ -4,6 +4,7 @@ import 'package:flutter_app/common/toast.dart';
 
 import '../data_oper_page.dart';
 import 'basicWidget/basic_widget_page.dart';
+import 'vesselWidget/drawer_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key, this.title}) : super(key: key);
@@ -17,6 +18,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     'Dart基础',
     '常用组件',
     '布局类组件',
+    '容器类组件',
     '测试chanel',
     '向原生ios弹框传值',
     '数据库操作',
@@ -92,6 +94,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
                 })
           ],
         ),
+        drawer: MyDrawer(),
         body: SafeArea(
           child: Center(
             child: Container(
@@ -127,6 +130,8 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
                          Navigator.pushNamed(context, '/ErrorDetailPage');
                        } else if(title == '布局类组件') {
                          Navigator.pushNamed(context, '/LayoutWidgetPage');
+                       } else if (title == '容器类组件') {
+                         Navigator.pushNamed(context, '/VesselWidgetPage');
                        }
                       },
                       child: Container(
