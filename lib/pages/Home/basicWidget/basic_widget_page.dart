@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BasicWidgetPage extends StatelessWidget{
-  var dataList = ['Container','按钮','文本','图片','单选开关和复选框','输入框','表单','进度指示器','动画组件'];
+  final List<String> dataList = <String>['Container','按钮','文本','图片','单选开关和复选框','输入框','表单','进度指示器','动画组件'];
 
   void clickEvent(BuildContext context, String title) {
     if (title == 'Container') {
@@ -28,10 +28,9 @@ class BasicWidgetPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text("基础组件"),
+        title: const Text('基础组件'),
         centerTitle: true,
       ),
       body: Center(
@@ -39,7 +38,7 @@ class BasicWidgetPage extends StatelessWidget{
           child: Container(
             child: ListView.builder(
                 itemCount: dataList.length,
-                itemBuilder: (context,index){
+                itemBuilder: (BuildContext context,int index){
                   final String title = dataList[index];
                   return InkWell(
                     onTap: (){
@@ -53,10 +52,10 @@ class BasicWidgetPage extends StatelessWidget{
                           Container(
                             height: 44,
                             width: double.infinity,
-                            alignment: Alignment(-1, 0),
+                            alignment: const Alignment(-1, 0),
                             child: Text(title),
                           ),
-                          Divider(
+                          const Divider(
                             height: 1,
                           )
                         ],

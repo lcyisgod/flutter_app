@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class BasicFormPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return BasicFormPageState();
   }
 }
@@ -15,7 +14,6 @@ class BasicFormPageState extends State<BasicFormPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     _controller = TextEditingController();
     _controller2 = TextEditingController();
     _globalKey = GlobalKey<FormState>();
@@ -24,10 +22,9 @@ class BasicFormPageState extends State<BasicFormPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('表单'),
+        title: const Text('表单'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -45,7 +42,7 @@ class BasicFormPageState extends State<BasicFormPage> {
                 },
                 child: Column(
                   children: <Widget>[
-                    Text('表单是可以加入验证条件的输入框'),
+                    const Text('表单是可以加入验证条件的输入框'),
                     TextFormField(
                       autofocus: true,
                       controller: _controller,
@@ -60,8 +57,7 @@ class BasicFormPageState extends State<BasicFormPage> {
                       //验证回调
                       validator: (String value) {
                         return value
-                            .trim()
-                            .length > 0 ? null:'用户名不能为空';
+                            .trim().isNotEmpty ? null:'用户名不能为空';
                       },
                       //保存回调
                       onSaved: (String value) {
@@ -100,7 +96,7 @@ class BasicFormPageState extends State<BasicFormPage> {
                                   print('验证没有通过');
                                 }
                               },
-                              child: Text('登录'),
+                              child: const Text('登录'),
                               color: Theme.of(context).primaryColor,
                             ),
                           )

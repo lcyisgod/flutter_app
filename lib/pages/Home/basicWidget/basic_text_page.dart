@@ -7,7 +7,6 @@ import 'webview_page.dart';
 class BasicTextPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return BasicTextPageState();
   }
 }
@@ -17,19 +16,17 @@ class BasicTextPageState extends State<BasicTextPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     //获取路由参数
-    var args = ModalRoute.of(context).settings.arguments;
+    final Object args = ModalRoute.of(context).settings.arguments;
     print('路由参数为$args');
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('文本'),
+        title: const Text('文本'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -41,7 +38,7 @@ class BasicTextPageState extends State<BasicTextPage> {
                 children: <Widget>[
                   Container(
                    width: double.infinity,
-                   alignment: Alignment(0, 0),
+                   alignment: const Alignment(0, 0),
                    child:  Text(
                      '这是一段普通文本',
                      textAlign: TextAlign.center,
@@ -58,17 +55,17 @@ class BasicTextPageState extends State<BasicTextPage> {
                      ),
                    ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     width: double.infinity,
-                    alignment: Alignment(0, 0),
+                    alignment: const Alignment(0, 0),
                     height: 44,
-                    child:  Text(
+                    child:  const Text(
                       '下面是一段富文本',
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  Divider(),
+                  const Divider(),
                   Container(
                     width: double.infinity,
                     child: RichText(
@@ -76,17 +73,17 @@ class BasicTextPageState extends State<BasicTextPage> {
                         text: TextSpan(
                           text: '登陆即同意',
                           style: TextStyle(fontSize: 14, color: Colors.black),
-                          children: [
+                          children: <TextSpan>[
                             TextSpan(
                               text: '服务条款',
                               style: TextStyle(fontSize: 14, color: Colors.blue),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                   var obj = Navigator.push<void>(
+                                   final Future<void> obj = Navigator.push<void>(
                                        context,
                                        MaterialPageRoute<WebViewPage>(
-                                          builder: (context){
-                                            return WebViewPage(
+                                          builder: (BuildContext context){
+                                            return const WebViewPage(
                                               title: '网页',
                                               baseUrl: 'https://www.baidu.com',
                                             );
@@ -95,7 +92,7 @@ class BasicTextPageState extends State<BasicTextPage> {
                                    ).then((dynamic value){//界面在返回之后调用该方法
                                      print('界面返回了');
                                    });
-                                   obj.then((value) {
+                                   obj.then((dynamic value) {
                                      print('返回值是$value');
                                    });
                                 },

@@ -14,11 +14,12 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<HomePage>{
-  var  listData = [
+  final List<String>  listData = <String>[
     'Dart基础',
     '常用组件',
     '布局类组件',
     '容器类组件',
+    '可滚动组件',
     '测试chanel',
     '向原生ios弹框传值',
     '数据库操作',
@@ -40,7 +41,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
 
   Future <void> _showIosAlert() async {
     try {
-      final String result = await platform.invokeMethod('showIosAlert',{'tipTitle':'提示','message':'按一下','cancelTitle':'取消','ensureTitle':'确定'});
+      final String result = await platform.invokeMethod('showIosAlert',<String,String>{'tipTitle':'提示','message':'按一下','cancelTitle':'取消','ensureTitle':'确定'});
       print(result);
     } on PlatformException {
       Toast.show('调用出错了');
@@ -132,6 +133,8 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
                          Navigator.pushNamed(context, '/LayoutWidgetPage');
                        } else if (title == '容器类组件') {
                          Navigator.pushNamed(context, '/VesselWidgetPage');
+                       } else if (title == '可滚动组件') {
+                         Navigator.pushNamed(context, '/ScrollWidgetPage');
                        }
                       },
                       child: Container(
@@ -143,7 +146,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
                             Container(
                               height: 52,
                               width: double.infinity,
-                              alignment: Alignment(-1, 0),
+                              alignment: const Alignment(-1, 0),
                               child: Text(
                                 listData[index].toString(),
                               ),
@@ -162,6 +165,5 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
   }
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

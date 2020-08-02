@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 class BasicButtonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('按钮'),
+        title: const Text('按钮'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -18,43 +17,43 @@ class BasicButtonPage extends StatelessWidget {
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 child: RaisedButton(
                     onPressed: (){
                       print('点击了RaisedButton');
                     },
-                  child: Text('RaisedButton'),
+                  child: const Text('RaisedButton'),
                     ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 child: FlatButton(
                   onPressed: (){
                     print('点击了FlatButton');
                   },
-                  child: Text('FlatButton'),
+                  child: const Text('FlatButton'),
                 ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 child: OutlineButton(
                   onPressed: (){
                     print('点击了OutlineButton');
                   },
-                  child: Text('OutlineButton'),
+                  child: const Text('OutlineButton'),
                 ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 //IconButton是一个可点击的Icon，不包括文字，默认没有背景，点击后会出现背景
                 child: IconButton(
                   onPressed: (){
@@ -63,11 +62,11 @@ class BasicButtonPage extends StatelessWidget {
                   icon: Icon(Icons.thumb_up),
                 ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 //RaisedButton、FlatButton、OutlineButton都有一个icon 构造函数
                 //通过它可以轻松创建带图标的按钮
                 child: FlatButton.icon(
@@ -75,14 +74,14 @@ class BasicButtonPage extends StatelessWidget {
                       print('点击了警告');
                     },
                     icon: Icon(Icons.warning),
-                    label: Text('警告')
+                    label: const Text('警告')
                 ),
               ),
-              Divider(),
+              const Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                alignment: Alignment(0, 0),
+                alignment: const Alignment(0, 0),
                 //自定义按钮样式
                 child: FlatButton(
                     textColor: Colors.white,
@@ -103,9 +102,9 @@ class BasicButtonPage extends StatelessWidget {
                     onPressed: (){
                       print('自定义按钮');
                     },
-                    child: Text('自定义按钮')),
+                    child: const Text('自定义按钮')),
               ),
-              Divider(),
+              const Divider(),
             ],
           ),
         ),

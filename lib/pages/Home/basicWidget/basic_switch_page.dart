@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 class BasicSwitchPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return BasicSwitchPageState();
   }
 }
@@ -15,7 +14,6 @@ class BasicSwitchPageState extends State<BasicSwitchPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _switchSelected = true;
     _checkboxSelected = true;
@@ -23,10 +21,9 @@ class BasicSwitchPageState extends State<BasicSwitchPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('选择开关和复选框'),
+        title: const Text('选择开关和复选框'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -37,20 +34,20 @@ class BasicSwitchPageState extends State<BasicSwitchPage> {
                 height: 44,
                 width: double.infinity,
                 color: Colors.blue,
-                alignment: Alignment(0, 0),
-                child: Text(
+                alignment: const Alignment(0, 0),
+                child: const Text(
                   '不同风格的Switch',
                   textAlign: TextAlign.center,
                 ),
               ),
-              Divider(),
+              const Divider(),
               Switch(
                   value: _switchSelected,
                   //选中的颜色
                   activeColor: Colors.red,
                 //滑杆的颜色
                 activeTrackColor: Colors.green,
-                  onChanged: (value){
+                  onChanged: (bool value){
                     setState(() {
                       _switchSelected = value;
                     });
@@ -58,7 +55,7 @@ class BasicSwitchPageState extends State<BasicSwitchPage> {
               ),
               CupertinoSwitch(
                   value: _switchSelected,
-                  onChanged: (value){
+                  onChanged: (bool value){
                     setState(() {
                       _switchSelected = value;
                     });
@@ -68,16 +65,16 @@ class BasicSwitchPageState extends State<BasicSwitchPage> {
                 height: 44,
                 width: double.infinity,
                 color: Colors.blue,
-                alignment: Alignment(0, 0),
-                child: Text(
+                alignment: const Alignment(0, 0),
+                child: const Text(
                   '复选框',
                   textAlign: TextAlign.center,
                 ),
               ),
-              Divider(),
+              const Divider(),
               Checkbox(
                   value: _checkboxSelected,
-                  onChanged: (value){
+                  onChanged: (bool value){
                     setState(() {
                       _checkboxSelected = value;
                     });

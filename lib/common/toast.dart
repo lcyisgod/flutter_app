@@ -2,7 +2,7 @@
 import 'package:oktoast/oktoast.dart';
 
 class Toast {
-  static show(String msg, {duration = 2000}) {
+  static void show(String msg, {int duration = 2000}) {
     showToast(
         msg,
         duration: Duration(milliseconds: duration),
@@ -10,7 +10,7 @@ class Toast {
     );
   }
 
-  static cancelToast() {
+  static void cancelToast() {
     dismissAllToast();
   }
 }

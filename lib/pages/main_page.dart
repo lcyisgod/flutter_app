@@ -11,10 +11,10 @@ class MainPage extends StatefulWidget {
 class MainPageState extends State<MainPage> {
 
   int _currentIndex = 0;
-  var _pageList;
-  var _tabImages;
-  var _appBarTitles = ["Home", "Email"];
-  final _pageController = PageController();
+  List<Widget> _pageList;
+  List<List<Widget>> _tabImages;
+  final List<String> _appBarTitles = <String>['Home', 'Email'];
+  final PageController _pageController = PageController();
 
   Widget _buildTabText(int curIndex) {
     return Padding(
@@ -38,21 +38,20 @@ class MainPageState extends State<MainPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    _pageList = [
-      HomePage(title: "首页",),
-      MyPage(title: "邮件",)
+    _pageList = <Widget>[
+      const HomePage(title: '首页',),
+      const MyPage(title: '邮件',)
     ];
 
-    _tabImages = [
-      [
-        Image.asset("assets/images/iconBar/icon_home_n.png"),
-        Image.asset("assets/images/iconBar/icon_home_s.png"),
+    _tabImages = <List<Widget>>[
+      <Widget>[
+        Image.asset('assets/images/iconBar/icon_home_n.png'),
+        Image.asset('assets/images/iconBar/icon_home_s.png'),
       ],
-      [
-        Image.asset("assets/images/iconBar/icon_mine_n.png"),
-        Image.asset("assets/images/iconBar/icon_mine_s.png"),
+      <Widget>[
+        Image.asset('assets/images/iconBar/icon_mine_n.png'),
+        Image.asset('assets/images/iconBar/icon_mine_s.png'),
       ]
     ];
 
@@ -60,14 +59,14 @@ class MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       //底部导航组件
       //用于展示有多个模块时
       bottomNavigationBar: BottomNavigationBar(
-        items: List.generate(
+        // ignore: always_specify_types
+        items:List.generate(
             _appBarTitles.length,
-                (i) => BottomNavigationBarItem(
+                (int i) => BottomNavigationBarItem(
               icon: _getTabIcon(i),
               title: _buildTabText(i),
             )),
@@ -81,7 +80,7 @@ class MainPageState extends State<MainPage> {
         controller: _pageController,
         onPageChanged: _onPageChanged,
         children: _pageList,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
       ),
     );
   }

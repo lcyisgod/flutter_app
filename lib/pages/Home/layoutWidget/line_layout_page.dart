@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 class LineLayoutPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('线性布局'),
+        title: const Text('线性布局'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -31,16 +30,16 @@ class LineLayoutPage extends StatelessWidget{
                   //该参数受verticalDirection参数影响
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    Text('第一行第一列'),
+                    const Text('第一行第一列'),
                     Container(
                       width: 10,
                     ),
-                    Text('第一行第二列')
+                    const Text('第一行第二列')
                   ],
                   //
                 ),
               ),
-              Divider(),
+              const Divider(),
             ],
           ),
         ),

@@ -14,7 +14,6 @@ class WebViewPage extends StatefulWidget {
   final String title;
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return WebViewPageState();
   }
 }
@@ -25,8 +24,8 @@ class WebViewPageState extends State<WebViewPage> {
   List<JavascriptChannel> javaChannelList;
 
   void createJavaChannel() {
-    javaChannelList = [];
-    JavascriptChannel shareChannel = JavascriptChannel(
+    javaChannelList = <JavascriptChannel>[];
+    final JavascriptChannel shareChannel = JavascriptChannel(
       name: 'share',
       onMessageReceived: (JavascriptMessage message){
         print('参数为:${message.message}');
@@ -38,7 +37,6 @@ class WebViewPageState extends State<WebViewPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     centerTitle = widget.title;
     createJavaChannel();
@@ -46,7 +44,6 @@ class WebViewPageState extends State<WebViewPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold (
       appBar: AppBar(
         title: Text(centerTitle??''),
@@ -58,7 +55,7 @@ class WebViewPageState extends State<WebViewPage> {
 //                debugDumpApp();
                 Navigator.pop(context);
               },
-              child: Text('返回'))
+              child: const Text('返回'))
         ],
       ),
       body: WebView(
@@ -75,10 +72,11 @@ class WebViewPageState extends State<WebViewPage> {
         onPageFinished: (String url) {
           EasyLoading.dismiss();
           Toast.show('加载完成');
-          _controller.evaluateJavascript('document.title').then((value){
-            setState(() {
-              centerTitle = value;
-            });
+          _controller.evaluateJavascript('document.title')
+              .then((String value){
+                setState(() {
+                  centerTitle = value;
+                });
           });
         },
         onWebResourceError: (dynamic error) {
@@ -92,7 +90,7 @@ class WebViewPageState extends State<WebViewPage> {
         //类似于重定位？
         navigationDelegate: (NavigationRequest request){
           //对于需要拦截的操作，做判断
-          if(request.url.contains("baidu")){
+          if(request.url.contains('baidu')){
             print('即将打开 ${request.url}');
             return NavigationDecision.navigate;
 //            return NavigationDecision.prevent;
@@ -106,7 +104,6 @@ class WebViewPageState extends State<WebViewPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _controller.clearCache();
   }

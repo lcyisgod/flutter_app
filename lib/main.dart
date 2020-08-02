@@ -23,38 +23,43 @@ import 'pages/Home/layoutWidget/water_layout_page.dart';
 import 'pages/Home/other/dart_basic_page.dart';
 import 'pages/Home/other/error_detail_page.dart';
 import 'pages/Home/other/more_thead_page.dart';
+import 'pages/Home/scrollWidget/customscrollview_widget_page.dart';
+import 'pages/Home/scrollWidget/gridviewlist_widget_page.dart';
+import 'pages/Home/scrollWidget/listview_widget_page.dart';
+import 'pages/Home/scrollWidget/scroll_widget_page.dart';
+import 'pages/Home/scrollWidget/singchild_widget_page.dart';
 import 'pages/Home/vesselWidget/limit_size_widget_page.dart';
 import 'pages/Home/vesselWidget/nav_widget_page.dart';
 import 'pages/Home/vesselWidget/padding_widget_page.dart';
 import 'pages/Home/vesselWidget/transform_widget_page.dart';
 import 'pages/Home/vesselWidget/vessel_widget_page.dart';
-import 'pages/Mine/my_pagee.dart';
 import 'pages/Login/login_page.dart';
+import 'pages/Mine/my_pagee.dart';
 import 'pages/main_page.dart';
 
 //处理Framework异常(弹出红色界面的异常)？
 //只能收到本界面的异常?
-Future<Null> _reportError(dynamic error, dynamic stackTrace) async {
+Future<void> _reportError(dynamic error, dynamic stackTrace) async {
   print('catch error=');
   print(error);
 }
 
-void test(ZoneDelegate parent, Zone zone,String line) async {
+Future<void> test(ZoneDelegate parent, Zone zone,String line) async {
   parent.print(zone,'打印日志收集$line');
 }
 
-void test2(String line) async {
+Future<void> test2(String line) async {
   print('打印日志收集2:$line');
 }
 
-void main() async{
+void main() {
 
   FlutterError.onError = (FlutterErrorDetails details) async {
 //    FlutterError.dumpErrorToConsole(details);
     Zone.current.handleUncaughtError(details.exception, details.stack);
   };
 
-  runZonedGuarded<Future<Null>>(() async {
+  runZonedGuarded<Future<void>>(() async {
     runApp(MyApp());
   },(dynamic error, StackTrace stackTrace) async {
     //异常处理
@@ -69,8 +74,7 @@ void main() async{
   ));
 
   //监听设备的旋转方向
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  SystemChrome.setPreferredOrientations(<DeviceOrientation>[DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   if (Platform.isAndroid) {
     //设置状态栏顶部和底部样式
     //很辣鸡，基本用不到
@@ -103,14 +107,14 @@ class MyApp extends StatelessWidget {
                 scaffoldBackgroundColor: Colors.orange,
                 hintColor: Colors.blue,
               ),
-              home: MyHomePage(title: '测试'),
+              home: const MyHomePage(title: '测试'),
               //路由表
               //此处为静态路由,及界面的入参在创建时就固定了
               routes: <String, WidgetBuilder>{
                 '/Login': (BuildContext context) =>  LoginPage(),
                 '/Home': (BuildContext context) =>  MainPage(),
-                '/PageA': (BuildContext context) =>  MyPage(title: 'page A'),
-                '/PageB': (BuildContext context) =>  MyPage(title: 'page B'),
+                '/PageA': (BuildContext context) =>  const MyPage(title: 'page A'),
+                '/PageB': (BuildContext context) =>  const MyPage(title: 'page B'),
                 '/BasicContainer': (BuildContext context) => BasicContainerPage(),
                 '/BasicAnimationPage': (BuildContext context) => BasicAnimationPage(),
                 '/DartBasicPage': (BuildContext context) => DartBasicPage(),
@@ -134,6 +138,11 @@ class MyApp extends StatelessWidget {
                 '/LimitSizeWidgetPage': (BuildContext context) => LimitSizeWidgetPage(),
                 '/TransformWidgetPage': (BuildContext context) => TransformWidgetPage(),
                 '/NavWidgetPage': (BuildContext context) => NavWidgetPage(),
+                '/ScrollWidgetPage': (BuildContext context) => ScrollWidgetPage(),
+                '/SingleChildScrollPage': (BuildContext context) => SingleChildScrollPage(),
+                '/ListViewWidgetPage': (BuildContext context) => ListViewWidgetPage(),
+                '/GridViewListWidgetPage': (BuildContext context) => GridViewListWidgetPage(),
+                '/CustomScrollViewWidgetPage': (BuildContext context) => CustomScrollViewWidgetPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
@@ -157,7 +166,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Future<void> startTime() async{
-    Duration  duration = const Duration(seconds: 1);
+    const Duration duration = Duration(seconds: 1);
     return  Timer(duration, navigationPage);
   }
 
@@ -227,7 +236,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     print('主界面销毁了');
     super.dispose();
   }

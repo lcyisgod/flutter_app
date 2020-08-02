@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class BasicProgressPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return BasicProgressPageState();
   }
 }
@@ -11,10 +10,9 @@ class BasicProgressPage extends StatefulWidget {
 class BasicProgressPageState extends State<BasicProgressPage> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('进度指示器'),
+        title: const Text('进度指示器'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -24,10 +22,10 @@ class BasicProgressPageState extends State<BasicProgressPage> {
               Container(
                 height: 44,
                 width: double.infinity,
-                alignment: Alignment(0, 0),
-                child: Text('两种风格的进度指示器'),
+                alignment: const Alignment(0, 0),
+                child: const Text('两种风格的进度指示器'),
               ),
-              Divider(),
+              const Divider(),
               //模糊进度条
               LinearProgressIndicator(
                 //当前进度
@@ -41,6 +39,7 @@ class BasicProgressPageState extends State<BasicProgressPage> {
                 //该值类型是Animation<Color>，这允许我们对进度条的颜色也可以指定动画。
                 //如果我们不需要对进度条颜色执行动画
                 //换言之，我们想对进度条应用一种固定的颜色，此时我们可以通过AlwaysStoppedAnimation来指定。
+                // ignore: always_specify_types
                 valueColor: AlwaysStoppedAnimation(Colors.red),
               ),
               Container(
@@ -50,6 +49,7 @@ class BasicProgressPageState extends State<BasicProgressPage> {
               //进度条显示50%
               LinearProgressIndicator(
                 backgroundColor: Colors.grey[200],
+                // ignore: always_specify_types
                 valueColor: AlwaysStoppedAnimation(Colors.blue),
                 value: .5,
               ),
@@ -60,6 +60,7 @@ class BasicProgressPageState extends State<BasicProgressPage> {
               //圆形进度条
               CircularProgressIndicator(
                 backgroundColor: Colors.grey,
+                // ignore: always_specify_types
                 valueColor: AlwaysStoppedAnimation(Colors.blue),
               ),
               Container(
@@ -69,18 +70,19 @@ class BasicProgressPageState extends State<BasicProgressPage> {
               CircularProgressIndicator(
                 backgroundColor: Colors.grey,
                 value: 0.5,
+                // ignore: always_specify_types
                 valueColor: AlwaysStoppedAnimation(Colors.blue),
               ),
               Container(
                 height: 30,
                 width: double.infinity,
               ),
-              Divider(),
+              const Divider(),
               Container(
                 height: 30,
                 width: double.infinity,
-                alignment: Alignment(0, 0),
-                child: Text(
+                alignment: const Alignment(0, 0),
+                child: const Text(
                   '自定义进度条'
                 ),
               ),
@@ -89,6 +91,7 @@ class BasicProgressPageState extends State<BasicProgressPage> {
                 height: 3,
                 child: LinearProgressIndicator(
                   backgroundColor: Colors.grey[200],
+                  // ignore: always_specify_types
                   valueColor: AlwaysStoppedAnimation(Colors.blue),
                   value: .5,
                 ),
@@ -104,6 +107,7 @@ class BasicProgressPageState extends State<BasicProgressPage> {
                 child:CircularProgressIndicator(
                 backgroundColor: Colors.grey,
                 value: 0.5,
+                // ignore: always_specify_types
                 valueColor: AlwaysStoppedAnimation(Colors.blue),
               )),
             ],

@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 class SpaceLayoutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('弹性布局'),
+        title: const Text('弹性布局'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -16,10 +15,10 @@ class SpaceLayoutPage extends StatelessWidget {
               Container(
                 height: 44,
                 width: double.infinity,
-                alignment: Alignment(-1, 0),
-                child: Text('弹性布局允许子组件按照一定比例来分配父容器空间'),
+                alignment: const Alignment(-1, 0),
+                child: const Text('弹性布局允许子组件按照一定比例来分配父容器空间'),
               ),
-              Divider(),
+              const Divider(),
               //Flex组件可以沿着水平或垂直方向排列子组件
               //Row或者Column继承Flex，是已经知道主轴方向的Flex
               Flex(
@@ -34,24 +33,24 @@ class SpaceLayoutPage extends StatelessWidget {
                       flex: 1,
                       child: Container(
                         color: Colors.red,
-                        child: Text('Row'),
+                        child: const Text('Row'),
                       )
                   ),
                   //Spacer的功能是占用指定比例的空间
                   //是Expanded的一个包装类
-                  Spacer(
+                  const Spacer(
                     flex: 1,
                   ),
                   Expanded(
                     flex: 2,
                     child: Container(
                       color: Colors.blue,
-                      child:  Text('水平方向'),
+                      child:  const Text('水平方向'),
                     ),
                   )
                 ],
               ),
-              Divider(),
+              const Divider(),
               Container(
                 height: 100,
                 child: Flex(
@@ -61,20 +60,20 @@ class SpaceLayoutPage extends StatelessWidget {
                         flex: 1,
                         child: Container(
                           color: Colors.yellow,
-                          child: Text('Column'),
+                          child: const Text('Column'),
                         )
                     ),
                     Expanded(
                         flex: 2,
                         child: Container(
                           color: Colors.green,
-                          child: Text('垂直方向'),
+                          child: const Text('垂直方向'),
                         )
                     )
                   ],
                 ),
               ),
-              Divider(),
+              const Divider(),
             ],
           ),
         ),

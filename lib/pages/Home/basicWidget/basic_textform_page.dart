@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 class BasicTextFormPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return BasicTextFormPageState();
   }
 }
@@ -18,7 +17,6 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     _controller = TextEditingController(text: '');
     //可以通过controller监听键盘事件
     //通过这种方式无法确定键盘事件，但是所有的键盘事件都会响应这里
@@ -39,21 +37,21 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     print('测试界面');
     focusNode.removeListener(() {
       print('移除监听');
     });
-    _controller.clear();
+    focusNode.dispose();
+    focusNode2.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('输入框'),
+        title: const Text('输入框'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -136,12 +134,10 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
               ),
               FlatButton(
                 onPressed: (){
-                  if (null == focusScopeNode) {
-                    focusScopeNode = FocusScope.of(context);
-                  }
+                  focusScopeNode ??= FocusScope.of(context);
                   focusScopeNode.requestFocus(focusNode2);
                 },
-                child: Text('移动焦点'),
+                child: const Text('移动焦点'),
               ),
               FlatButton(
                 onPressed: (){
@@ -149,9 +145,9 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                   focusNode.unfocus();
                   focusNode2.unfocus();
                 },
-                child: Text('隐藏键盘'),
+                child: const Text('隐藏键盘'),
               ),
-              Divider(),
+              const Divider(),
             ],
           ),
         ),

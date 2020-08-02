@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 
 class TestFlowDelegate extends FlowDelegate {
-  EdgeInsets margin = EdgeInsets.zero;
   TestFlowDelegate({this.margin});
+  EdgeInsets margin = EdgeInsets.zero;
 
   @override
   void paintChildren(FlowPaintingContext context) {
-    // TODO: implement paintChildren
-    var x = margin.left;
-    var y = margin.top;
+    double x = margin.left;
+    double y = margin.top;
     print('context的宽度');
     print(context.size.width);
     //计算每一个子Widget的位置
     for (int i = 0; i < context.childCount; i++) {
       print('子组件的宽度');
       print(context.getChildSize(i).width);
-      var w = context.getChildSize(i).width + x + margin.right;
+      final double w = context.getChildSize(i).width + x + margin.right;
       print('子组件的最右侧坐标');
       print(w);
       if (w < context.size.width) {
@@ -51,10 +50,9 @@ class TestFlowDelegate extends FlowDelegate {
 class WaterLayoutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('流式布局'),
+        title: const Text('流式布局'),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -63,11 +61,11 @@ class WaterLayoutPage extends StatelessWidget {
               children: <Widget>[
                 Container(
                   height: 44,
-                  child: Text(
+                  child: const Text(
                       'Flutter中通过Wrap和Flow来支持流式布局,流式布局在超出范围后会自动折行'
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 //可以理解为可以折行的的Row
                 Container(
                   color: Colors.blueAccent,
@@ -81,31 +79,31 @@ class WaterLayoutPage extends StatelessWidget {
                     alignment: WrapAlignment.center,
                     children: <Widget>[
                       Chip(
-                        label: Text('Hamilton'),
+                        label: const Text('Hamilton'),
                         avatar: CircleAvatar(
                           backgroundColor: Colors.blue,
-                          child: Text('A'),
+                          child: const Text('A'),
                         ),
                       ),
                       Chip(
-                        label: Text('Lafayette'),
+                        label: const Text('Lafayette'),
                         avatar: CircleAvatar(
                           backgroundColor: Colors.blue,
-                          child: Text('M'),
+                          child: const Text('M'),
                         ),
                       ),
                       Chip(
-                        label: Text('Mulligan'),
+                        label: const Text('Mulligan'),
                         avatar: CircleAvatar(
                           backgroundColor: Colors.blue,
-                          child: Text('H'),
+                          child: const Text('H'),
                         ),
                       ),
                       Chip(
-                        label: Text('Laurens'),
+                        label: const Text('Laurens'),
                         avatar: CircleAvatar(
                           backgroundColor: Colors.blue,
-                          child: Text('J'),
+                          child: const Text('J'),
                         ),
                       ),
                     ],
@@ -149,7 +147,7 @@ class WaterLayoutPage extends StatelessWidget {
                 Container(
                   color: Colors.blueGrey,
                   child:  Flow(
-                    delegate: TestFlowDelegate(margin: EdgeInsets.all(10.0)),
+                    delegate: TestFlowDelegate(margin: const EdgeInsets.all(10.0)),
                     children: <Widget>[
                       Container(width: 80.0,height: 80.0,color: Colors.red,),
                       Container(width: 80.0,height: 80.0,color: Colors.green,),

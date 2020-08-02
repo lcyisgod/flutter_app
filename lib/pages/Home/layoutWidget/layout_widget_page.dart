@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LayoutWidgetPage extends StatelessWidget {
-  final List<String> dataList = ['线性布局','弹性布局','流式布局','层叠布局','对齐与相对定位'];
+  final List<String> dataList = <String>['线性布局','弹性布局','流式布局','层叠布局','对齐与相对定位'];
 
   void clickEvent(BuildContext context, String title) {
     if (title == '线性布局') {
@@ -19,10 +19,9 @@ class LayoutWidgetPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('布局组件'),
+        title: const Text('布局组件'),
         centerTitle: true,
       ),
       body: Center(
@@ -32,7 +31,7 @@ class LayoutWidgetPage extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index){
                   final String title = dataList[index];
                   return InkWell(
-                    splashColor: Color(0x00000000),
+                    splashColor: const Color(0x00000000),
                     onTap: (){
                       clickEvent(context, title);
                     },
@@ -44,10 +43,10 @@ class LayoutWidgetPage extends StatelessWidget {
                           Container(
                             height: 44,
                             width: double.infinity,
-                            alignment: Alignment(-1, 0),
+                            alignment: const Alignment(-1, 0),
                             child: Text(title),
                           ),
-                          Divider(
+                          const Divider(
                             height: 1,
                           )
                         ],

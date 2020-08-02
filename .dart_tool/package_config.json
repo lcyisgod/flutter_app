@@ -503,10 +503,10 @@
       "name": "flutter_app",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-07-29T01:47:04.282951Z",
+  "generated": "2020-07-31T09:41:40.408843Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

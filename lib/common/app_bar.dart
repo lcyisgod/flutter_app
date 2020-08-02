@@ -5,10 +5,10 @@ import 'package:flutter/services.dart';
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppBar({
     Key key,
-    this.backgroundColor: Colors.white,
-    this.title: '',
-    this.centerTitle: '',
-    this.isBack: true,
+    this.backgroundColor = Colors.white,
+    this.title = '',
+    this.centerTitle = '',
+    this.isBack = true,
     this.onBackPressed,
     this.onPressend,
     this.backImg,
@@ -28,15 +28,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String rightImg;
   @override
   Widget build(BuildContext context) {
-    SystemUiOverlayStyle _overlayStyle =
+    final SystemUiOverlayStyle _overlayStyle =
         ThemeData.estimateBrightnessForColor(backgroundColor) == Brightness.dark
             ? SystemUiOverlayStyle.light
             : SystemUiOverlayStyle.dark;
     //判断是否处于暗黑模式
     //当前只对iOS生效
     final Brightness brightness = MediaQuery.of(context).platformBrightness;
-    bool isDark = brightness == Brightness.dark;
-    // TODO: implement build
+    final bool isDark = brightness == Brightness.dark;
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: _overlayStyle,
       child: Material(
@@ -61,28 +60,30 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ),
               ],
             ),
-            isBack
-                ? IconButton(
-                    icon: Image.asset(backImg, color: Colors.white),
-                    padding: const EdgeInsets.all(12.0),
-                    onPressed: onBackPressed == null
-                        ? () {
-                            FocusScope.of(context).requestFocus(FocusNode());
-                            Navigator.maybePop(context);
-                          }
-                        : () {
-                            onBackPressed();
-                          })
-                : SizedBox(),
+            Offstage(
+              offstage: !isBack,
+              child: IconButton(
+                  icon: Image.asset(backImg, color: Colors.white),
+                  padding: const EdgeInsets.all(12.0),
+                  onPressed: onBackPressed == null
+                      ? () {
+                    FocusScope.of(context).requestFocus(FocusNode());
+                    Navigator.maybePop(context);
+                  }
+                      : () {
+                    onBackPressed();
+                  }),
+            ),
             //设置右侧的按钮
             Positioned(
                 right: 0.0,
                 child: Theme(
                     data: ThemeData(
-                        buttonTheme: ButtonThemeData(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                      minWidth: 60.0,
-                    )),
+                        buttonTheme: const ButtonThemeData(
+                          padding: EdgeInsets.symmetric(horizontal: 16.0),
+                          minWidth: 60.0,
+                        )
+                    ),
                     child: actionName.isEmpty
                         ? (rightImg.isEmpty
                             ? Container()
@@ -101,7 +102,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                             onPressed: onPressend,
                             child: Text(
                               actionName,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 14,
                                 color: Color(0xff4688FA),
                               ),
@@ -113,5 +114,5 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(48.0);
+  Size get preferredSize => const Size.fromHeight(48.0);
 }

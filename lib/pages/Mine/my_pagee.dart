@@ -2,41 +2,41 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/common/theme_custome_data.dart';
 
 class MyPage extends StatefulWidget {
+  const MyPage({Key key, this.title}) : super(key: key);
   final String title;
-  MyPage({Key key, this.title}) : super(key: key);
   @override
   MyPageState createState() => MyPageState();
 }
 
 class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPage>{
   // 先创建一个 controller
-  var controller = new ScrollController();
-  var list = ["1","2","3","4","5","6","7","8","9","10","1","2","3","4","5","6","7","8","9","10"];
+  ScrollController controller = ScrollController();
+  final List<String> list = <String>['1','2','3','4','5','6','7','8','9','10','1','2','3','4','5','6','7','8','9','10'];
   //点击时跳转到某个位置
   //跳转的具体偏移量
-  pressedOnClick(BuildContext context) async{
-    this.controller.animateTo(
+  Future<void> pressedOnClick(BuildContext context) async{
+    controller.animateTo(
         60*5.0,
-        duration: Duration(microseconds: 300),
+        duration: const Duration(microseconds: 300),
         curve: Curves.bounceIn
     );
   }
 
-  deleteData(int index) async {
+  Future<void> deleteData(int index) async {
     setState(() {
       list.removeAt(index);
     });
   }
 
-  changeData(int index) async {
+  Future<void> changeData(int index) async {
     setState(() {
-      list[index] = "修改测试数据";
+      list[index] = '修改测试数据';
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    super.build(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -44,7 +44,7 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
           IconButton(
               icon: Icon(Icons.add),
               onPressed: () {
-              Navigator.popUntil(context, ModalRoute.withName('/Login'));
+
               })
         ],
       ),
@@ -52,8 +52,8 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
           child: Container(
               child: ListView.builder(
                   itemCount: list.length,
-                  controller: this.controller,
-                  itemBuilder: (_, index) {
+                  controller: controller,
+                  itemBuilder: (_, int index) {
                     return InkWell(
                       onTap: (){
 //                        deleteData(index);
@@ -66,12 +66,12 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
                           children: <Widget>[
                             Container(
                               height: 59,
-                              alignment: Alignment(0,0),
+                              alignment: const Alignment(0,0),
                               child: Text(
                                   list[index],
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      color: MyThemData().colorStyle(context, true, "textColor")
+                                      color: MyThemData().colorStyle(context, true, 'textColor')
                                   )
                               ),
                             ),
@@ -89,12 +89,10 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
 
   @override
   void dispose() {
-    // TODO: implement dispose
     print('销毁邮件界面');
     super.dispose();
   }
 
   @override
-  // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

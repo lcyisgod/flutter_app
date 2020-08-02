@@ -5,7 +5,7 @@ import 'package:flutter_app/pages/main_page.dart';
 import 'package:flutter_app/routers/router_init.dart';
 
 class Routes {
-  static String main = "/main";
+  static String main = '/main';
   static List<IRouterProvider> _listRouter = [];
 
   static void configureRoutes(Router router) {
