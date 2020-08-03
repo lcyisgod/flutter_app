@@ -56,6 +56,9 @@ Future<void> test2(String line) async {
 
 void main() {
 
+  EasyLoading.instance
+    ..maskType = EasyLoadingMaskType.clear;
+
   FlutterError.onError = (FlutterErrorDetails details) async {
 //    FlutterError.dumpErrorToConsole(details);
     Zone.current.handleUncaughtError(details.exception, details.stack);
