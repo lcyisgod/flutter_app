@@ -26,6 +26,8 @@ import 'pages/Home/other/more_thead_page.dart';
 import 'pages/Home/scrollWidget/customscrollview_widget_page.dart';
 import 'pages/Home/scrollWidget/gridviewlist_widget_page.dart';
 import 'pages/Home/scrollWidget/listview_widget_page.dart';
+import 'pages/Home/scrollWidget/scroll_controller_page.dart';
+import 'pages/Home/scrollWidget/scroll_listener_page.dart';
 import 'pages/Home/scrollWidget/scroll_widget_page.dart';
 import 'pages/Home/scrollWidget/singchild_widget_page.dart';
 import 'pages/Home/vesselWidget/limit_size_widget_page.dart';
@@ -143,6 +145,8 @@ class MyApp extends StatelessWidget {
                 '/ListViewWidgetPage': (BuildContext context) => ListViewWidgetPage(),
                 '/GridViewListWidgetPage': (BuildContext context) => GridViewListWidgetPage(),
                 '/CustomScrollViewWidgetPage': (BuildContext context) => CustomScrollViewWidgetPage(),
+                '/ScrollControllerPage': (BuildContext context) => ScrollControllerPage(),
+                '/ScrollListenerPage': (BuildContext context) => ScrollListenerPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表

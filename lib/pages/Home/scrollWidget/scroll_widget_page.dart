@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ScrollWidgetPage extends StatelessWidget {
-  final List<String> dataList = ['SingleChildScrollView','ListView','GridViewList','CustomScrollView'];
+  final List<String> dataList = ['SingleChildScrollView','ListView','GridViewList','CustomScrollView','ScrollController'];
   void jumpToPage(BuildContext context,String title) {
     if (title == 'SingleChildScrollView') {
       Navigator.pushNamed(context, '/SingleChildScrollPage');
@@ -11,6 +11,8 @@ class ScrollWidgetPage extends StatelessWidget {
       Navigator.pushNamed(context, '/GridViewListWidgetPage');
     } else if (title == 'CustomScrollView') {
       Navigator.pushNamed(context, '/CustomScrollViewWidgetPage');
+    } else if (title == 'ScrollController') {
+      Navigator.pushNamed(context, '/ScrollControllerPage');
     }
   }
 
