@@ -74,4 +74,5 @@
 /android/gradle/
 /gen/
 /gradle/
+./dart_tool
 #local.properties
