@@ -13,7 +13,8 @@
 *.iml
 *.ipr
 *.iws
-.idea/
+*.idea
+*.build
 *.dart_tool/build
 
 # The .vscode folder contains launch configuration and tasks you configure in
