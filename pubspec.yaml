@@ -32,6 +32,8 @@ dependencies:
   webview_flutter: ^0.3.22+1
   # 显示网络等待插件 https://pub.flutter-io.cn/packages/flutter_easyloading
   flutter_easyloading: ^1.1.4
+  # 状态管理插件  https://pub.flutter-io.cn/packages/provider
+  provider: ^4.3.1
 
 dev_dependencies:
   build_runner:

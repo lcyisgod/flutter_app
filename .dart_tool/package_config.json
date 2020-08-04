@@ -272,6 +272,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/nested-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "node_interop",
       "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/node_interop-1.1.1",
       "packageUri": "lib/",
@@ -360,6 +366,12 @@
       "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/process-3.0.13",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/provider-4.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
     },
     {
       "name": "pub_semver",
@@ -506,7 +518,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-07-31T09:41:40.408843Z",
+  "generated": "2020-08-04T06:47:16.772087Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

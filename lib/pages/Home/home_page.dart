@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/common/toast.dart';
+import 'package:flutter_app/pages/Widget/action_item_widget.dart';
 
 import '../data_oper_page.dart';
 import 'basicWidget/basic_widget_page.dart';
@@ -20,6 +21,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     '布局类组件',
     '容器类组件',
     '可滚动组件',
+    '功能型组件',
     '测试chanel',
     '向原生ios弹框传值',
     '数据库操作',
@@ -78,6 +80,42 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     super.dispose();
   }
 
+  void clickEvent(BuildContext context,String title) {
+    if(title == '常用组件') {
+      Navigator.push<void>(
+          context,
+          MaterialPageRoute<BasicWidgetPage>(builder: (BuildContext context)=>
+              BasicWidgetPage()
+          )
+      );
+    } else if (title == '测试chanel') {
+      _getBatteryLevel();
+    } else if (title == '向原生ios弹框传值') {
+      _showIosAlert();
+    } else if (title == '数据库操作') {
+      Navigator.push<void>(
+          context,
+          MaterialPageRoute<DateOperatePage>(builder: (BuildContext context)=>
+              DateOperatePage()
+          )
+      );
+    } else if (title == 'Dart基础') {
+      Navigator.pushNamed(context, '/DartBasicPage');
+    } else if (title == '多线程') {
+      Navigator.pushNamed(context, '/MoreThreadPage');
+    } else if (title == '异常处理') {
+      Navigator.pushNamed(context, '/ErrorDetailPage');
+    } else if(title == '布局类组件') {
+      Navigator.pushNamed(context, '/LayoutWidgetPage');
+    } else if (title == '容器类组件') {
+      Navigator.pushNamed(context, '/VesselWidgetPage');
+    } else if (title == '可滚动组件') {
+      Navigator.pushNamed(context, '/ScrollWidgetPage');
+    } else if (title == '功能型组件') {
+      Navigator.pushNamed(context, '/FunctionWidgetPage');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO(build): implement build
@@ -101,62 +139,14 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
             child: Container(
               child: ListView.builder(
                   itemCount: listData.length,
+                  itemExtent: 53,
                   itemBuilder: (BuildContext context,int index) {
                     final String title = listData[index].toString();
-                    return InkWell(
-                      onTap: (){
-                       if(title == '常用组件') {
-                         Navigator.push<void>(
-                             context,
-                             MaterialPageRoute<BasicWidgetPage>(builder: (BuildContext context)=>
-                                 BasicWidgetPage()
-                             )
-                         );
-                       } else if (title == '测试chanel') {
-                         _getBatteryLevel();
-                       } else if (title == '向原生ios弹框传值') {
-                         _showIosAlert();
-                       } else if (title == '数据库操作') {
-                         Navigator.push<void>(
-                             context,
-                             MaterialPageRoute<DateOperatePage>(builder: (BuildContext context)=>
-                                 DateOperatePage()
-                             )
-                         );
-                       } else if (title == 'Dart基础') {
-                         Navigator.pushNamed(context, '/DartBasicPage');
-                       } else if (title == '多线程') {
-                         Navigator.pushNamed(context, '/MoreThreadPage');
-                       } else if (title == '异常处理') {
-                         Navigator.pushNamed(context, '/ErrorDetailPage');
-                       } else if(title == '布局类组件') {
-                         Navigator.pushNamed(context, '/LayoutWidgetPage');
-                       } else if (title == '容器类组件') {
-                         Navigator.pushNamed(context, '/VesselWidgetPage');
-                       } else if (title == '可滚动组件') {
-                         Navigator.pushNamed(context, '/ScrollWidgetPage');
-                       }
+                    return ActionItemWidget(
+                      title: title,
+                      onPressed: (String title) {
+                        clickEvent(context, title);
                       },
-                      child: Container(
-                        height: 53,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              height: 52,
-                              width: double.infinity,
-                              alignment: const Alignment(-1, 0),
-                              child: Text(
-                                listData[index].toString(),
-                              ),
-                            ),
-                            const Divider(
-                              height: 1,
-                            )
-                          ],
-                        ),
-                      ),
                     );
                   }),
             ),

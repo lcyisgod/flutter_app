@@ -14,6 +14,11 @@ import 'pages/Home/basicWidget/basic_progress_page.dart';
 import 'pages/Home/basicWidget/basic_switch_page.dart';
 import 'pages/Home/basicWidget/basic_text_page.dart';
 import 'pages/Home/basicWidget/basic_textform_page.dart';
+import 'pages/Home/functionWidget/function_widget_page.dart';
+import 'pages/Home/functionWidget/inherited_widget_page.dart';
+import 'pages/Home/functionWidget/navigation_back_hold_page.dart';
+import 'pages/Home/functionWidget/provider_test_page.dart';
+import 'pages/Home/functionWidget/provider_widget_page.dart';
 import 'pages/Home/layoutWidget/aligning_layout_page.dart';
 import 'pages/Home/layoutWidget/layout_widget_page.dart';
 import 'pages/Home/layoutWidget/line_layout_page.dart';
@@ -150,6 +155,11 @@ class MyApp extends StatelessWidget {
                 '/CustomScrollViewWidgetPage': (BuildContext context) => CustomScrollViewWidgetPage(),
                 '/ScrollControllerPage': (BuildContext context) => ScrollControllerPage(),
                 '/ScrollListenerPage': (BuildContext context) => ScrollListenerPage(),
+                '/FunctionWidgetPage': (BuildContext context) => FunctionWidgetPage(),
+                '/NavigationBackHoldPage': (BuildContext context) => NavigationBackHoldPage(),
+                '/InheritedWidgetPage': (BuildContext context) => InheritedWidgetPage(),
+                '/ProviderWidgetPage': (BuildContext context) => ProviderWidgetPage(),
+                '/ProviderTestPage': (BuildContext context) => ProviderTestPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
