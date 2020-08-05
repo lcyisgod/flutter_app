@@ -3,7 +3,7 @@ import 'package:flutter_app/pages/Widget/action_item_widget.dart';
 
 class FunctionWidgetPage extends StatelessWidget {
 
-  final List<String> dataList = <String>['导航返回拦截','数据共享','跨组件状态共享'];
+  final List<String> dataList = <String>['导航返回拦截','数据共享','跨组件状态共享','异步更新UI','对话框'];
 
   void clickEvent(BuildContext context, String title) {
     if (title == '导航返回拦截') {
@@ -12,6 +12,10 @@ class FunctionWidgetPage extends StatelessWidget {
       Navigator.pushNamed(context, '/InheritedWidgetPage');
     } else if (title == '跨组件状态共享') {
       Navigator.pushNamed(context, '/ProviderWidgetPage');
+    } else if (title == '异步更新UI') {
+      Navigator.pushNamed(context, '/AsyncUIPage');
+    } else if (title == '对话框') {
+      Navigator.pushNamed(context, '/DialogWidgetPage');
     }
   }
 

@@ -14,6 +14,8 @@ import 'pages/Home/basicWidget/basic_progress_page.dart';
 import 'pages/Home/basicWidget/basic_switch_page.dart';
 import 'pages/Home/basicWidget/basic_text_page.dart';
 import 'pages/Home/basicWidget/basic_textform_page.dart';
+import 'pages/Home/functionWidget/async_ui_page.dart';
+import 'pages/Home/functionWidget/dialog_widget_page.dart';
 import 'pages/Home/functionWidget/function_widget_page.dart';
 import 'pages/Home/functionWidget/inherited_widget_page.dart';
 import 'pages/Home/functionWidget/navigation_back_hold_page.dart';
@@ -110,10 +112,20 @@ class MyApp extends StatelessWidget {
                 scaffoldBackgroundColor: Colors.white,
                 //输入框的占位文字颜色
                 hintColor: Colors.red,
+                dividerColor: Colors.grey
               ),
               darkTheme: ThemeData(
-                //暗黑模式
-                primarySwatch: Colors.red,
+                //主题颜色
+                //如果某些颜色属性没有设置，会使用主题颜色
+                primarySwatch: Colors.teal,
+                //主色，决定导航栏颜色
+                primaryColor: Colors.orange,
+                //次级色，决定大多数Widget的颜色，如进度条、开关等
+                accentColor: Colors.black54,
+                //卡片颜色
+                cardColor: Colors.cyan,
+                //分割线颜色
+                dividerColor: Colors.blueGrey,
                 scaffoldBackgroundColor: Colors.orange,
                 hintColor: Colors.blue,
               ),
@@ -160,6 +172,8 @@ class MyApp extends StatelessWidget {
                 '/InheritedWidgetPage': (BuildContext context) => InheritedWidgetPage(),
                 '/ProviderWidgetPage': (BuildContext context) => ProviderWidgetPage(),
                 '/ProviderTestPage': (BuildContext context) => ProviderTestPage(),
+                '/AsyncUIPage': (BuildContext context) =>  AsyncUIPage(),
+                '/DialogWidgetPage': (BuildContext context) => DialogWidgetPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
