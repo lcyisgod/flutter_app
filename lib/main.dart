@@ -14,6 +14,10 @@ import 'pages/Home/basicWidget/basic_progress_page.dart';
 import 'pages/Home/basicWidget/basic_switch_page.dart';
 import 'pages/Home/basicWidget/basic_text_page.dart';
 import 'pages/Home/basicWidget/basic_textform_page.dart';
+import 'pages/Home/eventAndNotification/event_bus_page.dart';
+import 'pages/Home/eventAndNotification/event_notification_page.dart';
+import 'pages/Home/eventAndNotification/gesture_dispose_page.dart';
+import 'pages/Home/eventAndNotification/original_event_page.dart';
 import 'pages/Home/functionWidget/async_ui_page.dart';
 import 'pages/Home/functionWidget/dialog_widget_page.dart';
 import 'pages/Home/functionWidget/function_widget_page.dart';
@@ -174,6 +178,10 @@ class MyApp extends StatelessWidget {
                 '/ProviderTestPage': (BuildContext context) => ProviderTestPage(),
                 '/AsyncUIPage': (BuildContext context) =>  AsyncUIPage(),
                 '/DialogWidgetPage': (BuildContext context) => DialogWidgetPage(),
+                '/EventNotificationPage': (BuildContext context) => EventNotificationPage(),
+                '/OriginalEventPage': (BuildContext context) => OriginalEventPage(),
+                '/GestureDisposePage': (BuildContext context) => GestureDisposePage(),
+                '/EventBusPage': (BuildContext context) => EventBusPage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表

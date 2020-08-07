@@ -22,6 +22,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     '容器类组件',
     '可滚动组件',
     '功能型组件',
+    '事件处理与通知',
     '测试chanel',
     '向原生ios弹框传值',
     '数据库操作',
@@ -113,6 +114,8 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
       Navigator.pushNamed(context, '/ScrollWidgetPage');
     } else if (title == '功能型组件') {
       Navigator.pushNamed(context, '/FunctionWidgetPage');
+    } else if (title == '事件处理与通知') {
+      Navigator.pushNamed(context, '/EventNotificationPage');
     }
   }
 
