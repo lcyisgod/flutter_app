@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a611ff07-2a8f-4bc6-a92b-13ea4442b756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_contend_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/original_event_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/dba20428ec5b25400881f34836377dec/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
@@ -35,7 +27,8 @@
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+            <state relative-caret-position="131">
+              <caret line="185" column="63" selection-start-line="185" selection-start-column="63" selection-end-line="185" selection-end-column="63" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -66,43 +59,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_contend_page.dart">
+        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_page.dart">
+        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="288">
+              <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart">
+        <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/notification_listener.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="177">
+              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -135,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_button_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_container.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_form_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_image_page.dart" />
@@ -181,18 +161,19 @@
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/original_event_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_contend_page.dart" />
-        <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart" />
-        <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_page.dart" />
         <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart" />
+        <option value="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="261" />
-    <option name="y" value="77" />
-    <option name="width" value="1209" />
+    <option name="x" value="282" />
+    <option name="y" value="86" />
+    <option name="width" value="1226" />
     <option name="height" value="740" />
   </component>
   <component name="ProjectView">
@@ -200,6 +181,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,9 +221,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,11 +287,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="261" y="77" width="1209" height="740" extended-state="0" />
+    <frame x="175" y="86" width="1226" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2536418" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25844595" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -319,9 +300,9 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" sideWeight="0.49957448" weight="0.3271605" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49872342" weight="0.34876543" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.49872342" visible="true" weight="0.34876543" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49957448" weight="0.32962447" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27314815" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27314815" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49872342" weight="0.32823366" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5012766" side_tool="true" weight="0.32823366" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
@@ -347,13 +328,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/scroll_view.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="511" column="21" selection-start-line="511" selection-start-column="21" selection-end-line="511" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/Home/scrollWidget/scroll_widget_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-156">
@@ -389,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/notification_listener.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -581,13 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotifiavtion.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotifiavtion.dart" />
     <entry file="file://$PROJECT_DIR$/lib/pages/Widget/action_item_widget.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -626,23 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/original_event_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="136" column="18" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#601#616#0" />
-            <element signature="e#1551#2824#0" />
-            <element signature="e#2917#2965#0" />
-            <element signature="e#2991#4181#0" />
-            <element signature="e#3986#4034#0" />
-            <element signature="e#4060#4669#0" />
-            <element signature="e#4761#4809#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/gestures/tap.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -650,39 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#2391#2437#0" />
-            <element signature="e#3431#4356#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/framework.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="4642" column="57" lean-forward="true" selection-start-line="4642" selection-start-column="57" selection-end-line="4642" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -703,23 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_contend_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -727,13 +625,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/original_event_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#2917#2965#0" />
+            <element signature="e#3986#4034#0" />
+            <element signature="e#4761#4809#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-158">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="185" column="63" selection-start-line="185" selection-start-column="63" selection-end-line="185" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_notification_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/framework.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="2373" column="7" selection-start-line="2373" selection-start-column="7" selection-end-line="2373" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/flutter/packages/flutter/lib/src/widgets/notification_listener.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>

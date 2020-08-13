@@ -44,7 +44,12 @@ class EventBusPageState extends State<EventBusPage> {
       ),
       body: SafeArea(
           child: Center(
-            child: Text('跨界面传值的方式,类似与iOS的通知'),
+            child: Column(
+              children: <Widget>[
+                Text('跨界面传值的方式,类似与iOS的通知'),
+                Text('不好意思,这又是一个有bug的例子')
+              ],
+            ),
           )
       ),
     );
