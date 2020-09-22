@@ -1,10 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/Widget/action_item_widget.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class CustomerDialog extends Dialog {
-  CustomerDialog(this.title, this.content, this.cancelTitle, this.ensureTitle,
-      this.cancelTap, this.ensureTap);
+  CustomerDialog(
+      this.title,
+      this.content,
+      this.cancelTitle,
+      this.ensureTitle,
+      this.cancelTap,
+      this.ensureTap);
 
   final String title;
   final String content;
@@ -273,6 +279,17 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
     );
   }
 
+  Future<void> showBottomSheet() async {
+    showMaterialModalBottomSheet(
+        context: context,
+        builder: (BuildContext context,ScrollController controller){
+          return Container(
+            height: 100,
+            color: Colors.red,
+          );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -322,6 +339,12 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
                     showGeneraDialog();
                   },
                 child: Text('弹框动画测试'),
+              ),
+              RaisedButton(
+                onPressed: (){
+                  showBottomSheet();
+                },
+                child: Text('测试底部弹出插件'),
               )
             ],
           ),

@@ -16,9 +16,9 @@
 		<data>
 		lILml1/Dm8FIsisqu4EM3Kg929Q=
 		</data>
-		<key>flutter_assets/LICENSE</key>
+		<key>flutter_assets/NOTICES</key>
 		<data>
-		S0R44N95kLRDwcTCi41ZrJlCLFU=
+		Nuhs3CX1R+HHfSFl7cz8zTJw14Q=
 		</data>
 		<key>flutter_assets/assets/images/iconBar/2.0x/icon_home_n.png</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		zIBm0C+IF1Uyd0Ysus7GG/2t3BY=
+		6S2rpTiNGz3kSyT1VZHCtMikvSo=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		MAlwTtxhEZ7D4so8b7PVbHHUDJM=
+		YQ1Dq7Hri7J2zHJgSatBwq4l4S0=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		c4lES89gGDE/pbQYZAtZSx0P7XQ=
+		a4DxLrLwhFWPIKS9/iPPSztqLuI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -125,15 +125,15 @@
 			YwkPE2N7k/su9XjVFpdeoUy7GFY9DEY+G4h3aEyC1dg=
 			</data>
 		</dict>
-		<key>flutter_assets/LICENSE</key>
+		<key>flutter_assets/NOTICES</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S0R44N95kLRDwcTCi41ZrJlCLFU=
+			Nuhs3CX1R+HHfSFl7cz8zTJw14Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			XFP2tGa+pZKPc2wfujRknUAjS1HgitfsbH3f4X/mp9k=
+			+0AWUrHrHGQTSCezuKdjS2ojl2MfUbfqgVj5/pIbm3s=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/iconBar/2.0x/icon_home_n.png</key>
@@ -316,22 +316,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zIBm0C+IF1Uyd0Ysus7GG/2t3BY=
+			6S2rpTiNGz3kSyT1VZHCtMikvSo=
 			</data>
 			<key>hash2</key>
 			<data>
-			fBGLLWoPsd6V2gnnkU1Ii6PABIH9UtqGJ5s6qgAnF9c=
+			I9xmlH5vh7tZAmJPPfrRvQrKK+wii8/XyKHX5XGaht8=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MAlwTtxhEZ7D4so8b7PVbHHUDJM=
+			YQ1Dq7Hri7J2zHJgSatBwq4l4S0=
 			</data>
 			<key>hash2</key>
 			<data>
-			F78X9dsClgLw0/flB5fyVwwNEoxH6pnZbtTlyR4OZA8=
+			I97Ets1m1McjIRZvP5SzG5Z/d5HBoWJUKlH8zYmNQw0=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -349,11 +349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c4lES89gGDE/pbQYZAtZSx0P7XQ=
+			a4DxLrLwhFWPIKS9/iPPSztqLuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			I5M7BRnkIZ7bmTulf1uN2H/2vYEAv6BPRMrt+7Mz9lM=
+			yjs1mdT+fSVGjKabCX7QCo0WjAhHdawMYUQDJjAFCA0=
 			</data>
 		</dict>
 	</dict>

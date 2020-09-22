@@ -19,7 +19,7 @@ class ProviderTestPage extends StatelessWidget {
   }
 }
 
-class Counter with ChangeNotifier,DiagnosticableMixin {
+class Counter with ChangeNotifier {
   int _count = 0;
   int _count2 = 0;
   int get count => _count;
@@ -35,16 +35,16 @@ class Counter with ChangeNotifier,DiagnosticableMixin {
     notifyListeners();
   }
 
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    // TODO: implement debugFillProperties
-    super.debugFillProperties(properties);
-    properties.add(IntProperty('count', count));
-    properties.add(IntProperty('count2',count2));
-  }
+//  @override
+//  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+//    // TODO: implement debugFillProperties
+//    super.debugFillProperties(properties);
+//    properties.add(IntProperty('count', count));
+//    properties.add(IntProperty('count2',count2));
+//  }
 }
 
-class Counter2 with ChangeNotifier,DiagnosticableMixin {
+class Counter2 with ChangeNotifier {
   int _count3 = 0;
   int get count3 => _count3;
 
@@ -53,12 +53,12 @@ class Counter2 with ChangeNotifier,DiagnosticableMixin {
     notifyListeners();
   }
 
-  @override
-  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    // TODO: implement debugFillProperties
-    super.debugFillProperties(properties);
-    properties.add(IntProperty('count3', count3));
-  }
+//  @override
+//  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+//    // TODO: implement debugFillProperties
+//    super.debugFillProperties(properties);
+//    properties.add(IntProperty('count3', count3));
+//  }
 }
 
 class Count extends StatelessWidget {
