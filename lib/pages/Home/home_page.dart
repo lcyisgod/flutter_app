@@ -27,7 +27,8 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     '向原生ios弹框传值',
     '数据库操作',
     '多线程',
-    '异常处理'
+    '异常处理',
+    '生命周期相关'
   ];
   static const MethodChannel platform =  MethodChannel('samples.flutter.io/battery');
   static const EventChannel eventChannel =  EventChannel('com.meetyou.flutter/event');
@@ -81,7 +82,7 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     super.dispose();
   }
 
-  void clickEvent(BuildContext context,String title) {
+  void clickEvent(BuildContext context,String title) async{
     if(title == '常用组件') {
       Navigator.push<void>(
           context,
@@ -116,6 +117,9 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
       Navigator.pushNamed(context, '/FunctionWidgetPage');
     } else if (title == '事件处理与通知') {
       Navigator.pushNamed(context, '/EventNotificationPage');
+    } else if (title == '生命周期相关') {
+      Map coordinates =  await Navigator.pushNamed(context, '/LifeCirclePage');
+      print(coordinates);
     }
   }
 

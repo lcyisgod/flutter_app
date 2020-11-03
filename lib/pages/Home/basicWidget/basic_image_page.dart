@@ -37,10 +37,11 @@ class BasicImagePage extends StatelessWidget {
                 ),
               ),
               Image.network(
-                'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=7428308,2994758752&fm=26&gp=0.jpg',
+                'https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=152797763,3165515443&fm=26&gp=0.jpg',
+//                'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=7428308,2994758752&fm=26&gp=0.jpg',
                 width: 100,
                 height: 100,
-              )
+              ),
             ],
           ),
         ),

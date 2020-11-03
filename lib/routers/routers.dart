@@ -8,7 +8,7 @@ class Routes {
   static String main = '/main';
   static List<IRouterProvider> _listRouter = [];
 
-  static void configureRoutes(Router router) {
+  static void configureRoutes(FluroRouter router) {
     //找不到页面
     router.notFoundHandler = Handler(
       handlerFunc: (BuildContext context,Map<String,List<String>> params){

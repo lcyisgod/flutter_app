@@ -54,7 +54,8 @@ class BasicAnimationPageState extends State<BasicAnimationPage> with SingleTicke
                     width: click? 200:100,
                     decoration: BoxDecoration(
                         image: const DecorationImage(
-                            image:  NetworkImage('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589451972365&di=5b22e70622b25257069b9a6e1273711a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201701%2F29%2F20170129094700_vHETL.jpeg'),
+                          image: NetworkImage('https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=152797763,3165515443&fm=26&gp=0.jpg'),
+//                            image:  NetworkImage('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589451972365&di=5b22e70622b25257069b9a6e1273711a&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201701%2F29%2F20170129094700_vHETL.jpeg'),
                             fit: BoxFit.cover
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(

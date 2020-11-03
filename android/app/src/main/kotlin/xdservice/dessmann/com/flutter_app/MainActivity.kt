@@ -1,9 +1,6 @@
 package xdservice.dessmann.com.flutter_app
 
-import android.os.Bundle
-
-import io.flutter.app.FlutterActivity
-import io.flutter.plugins.GeneratedPluginRegistrant
+import io.flutter.embedding.android.FlutterActivity;
 
 import android.content.Context
 import android.content.ContextWrapper

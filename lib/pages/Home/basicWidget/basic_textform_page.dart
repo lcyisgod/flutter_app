@@ -76,6 +76,8 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                 //通过这种方式设置最大长度会在输入框右下角显示一个提示
                 //如果不想这么做可以在下一个属性中限制长度
 //                maxLength: 11,
+                //和maxLength结合使用，在达到最大长度时是否禁止操作
+//              maxLengthEnforced: true,
                 //输入框的一些样式，是一个数组
                 inputFormatters: <TextInputFormatter>[
                   LengthLimitingTextInputFormatter(11),
@@ -84,35 +86,64 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                 obscureText: false,
                 //用于控制TextField的外观显示，如提示文本、背景颜色、边框等
                 decoration: InputDecoration(
-                  hintText: '提示文字',
-                  hintStyle: TextStyle(
-                    color: Colors.red,
-                    fontSize: 12,
-                  ),
-                  //位于提示文字上方的文字
-                  //在键盘收起时会遮盖提示文字
-                  labelText: '初始文字',
-                  labelStyle: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 12,
-                  ),
-                  //位于左侧的一个图标
-                  prefixIcon: Icon(Icons.person),
-                  //输入框的底部风格线
-                  // 去除下滑线在这里做
-                  border: InputBorder.none,
+                    hintText: '提示文字',
+                    hintStyle: TextStyle(
+                      color: Colors.red,
+                      fontSize: 12,
+                    ),
+                    //位于提示文字上方的文字
+                    //在键盘收起时会遮盖提示文字
+                    labelText: '初始文字',
+                    labelStyle: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 12,
+                    ),
+                    //位于左侧的一个图标
+                    prefixIcon: Icon(Icons.person),
+                    //输入框的底部风格线
+                    //去除下滑线在这里做
+                    border: InputBorder.none,
+                    //外边框的颜色
+                    //非获取焦点时
+                    enabledBorder: OutlineInputBorder(
+                        //外边框的弧度
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(15.0),
+                            topRight: Radius.circular(15.0),
+                            bottomLeft: Radius.circular(15.0),
+                            bottomRight: Radius.circular(15.0)),
+                        //外边框的颜色和宽度
+                        borderSide: BorderSide(
+                                color: Colors.yellow,
+                                width: 2
+                        )
+                    ),
+                    //非获取焦点时
+                    focusedBorder: OutlineInputBorder(
+                      //外边框的弧度
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(15.0),
+                            topRight: Radius.circular(15.0),
+                            bottomLeft: Radius.circular(15.0),
+                            bottomRight: Radius.circular(15.0)),
+                        //外边框的颜色和宽度
+                        borderSide: BorderSide(
+                            color: Colors.green,
+                            width: 2
+                        )
+                    )
                 ),
                 //监听文本变化
                 onChanged: (String value) {
                   print('文本变化了:$value');
                 },
                 //键盘提交事件
-                onSubmitted: (String value){
+                onSubmitted: (String value) {
                   print('提交事件:$value');
                 },
                 //键盘事件提交
                 //如果实现了该方法，则键盘可能无法收回
-                onEditingComplete: (){
+                onEditingComplete: () {
                   print('开始编辑');
                 },
               ),
@@ -129,18 +160,23 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                   labelStyle: TextStyle(
                     color: Colors.blue,
                     fontSize: 12,
-                ),
+                  ),
                 ),
               ),
               FlatButton(
-                onPressed: (){
+                onPressed: () {
                   focusScopeNode ??= FocusScope.of(context);
-                  focusScopeNode.requestFocus(focusNode2);
+                  if(focusNode.hasFocus){
+                    focusScopeNode.requestFocus(focusNode2);
+                  }
+                  if(focusNode2.hasFocus){
+                    focusScopeNode.requestFocus(focusNode);
+                  }
                 },
                 child: const Text('移动焦点'),
               ),
               FlatButton(
-                onPressed: (){
+                onPressed: () {
                   //失去焦点
                   focusNode.unfocus();
                   focusNode2.unfocus();

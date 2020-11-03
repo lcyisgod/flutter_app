@@ -77,6 +77,16 @@ class BasicTextPageState extends State<BasicTextPage> {
                             TextSpan(
                               text: '服务条款',
                               style: TextStyle(fontSize: 14, color: Colors.blue),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: '服务条款2',
+                                    style: TextStyle(fontSize: 14, color: Colors.yellow),
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = (){
+                                      Toast.show('点击了服务条款2');
+                                    }
+                                )
+                              ],
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                    final Future<void> obj = Navigator.push<void>(

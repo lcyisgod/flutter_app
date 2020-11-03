@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+//页面入口
 class ProviderTestPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,7 @@ class ProviderTestPage extends StatelessWidget {
   }
 }
 
+
 class Counter with ChangeNotifier {
   int _count = 0;
   int _count2 = 0;
@@ -34,31 +36,6 @@ class Counter with ChangeNotifier {
     _count2++;
     notifyListeners();
   }
-
-//  @override
-//  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-//    // TODO: implement debugFillProperties
-//    super.debugFillProperties(properties);
-//    properties.add(IntProperty('count', count));
-//    properties.add(IntProperty('count2',count2));
-//  }
-}
-
-class Counter2 with ChangeNotifier {
-  int _count3 = 0;
-  int get count3 => _count3;
-
-  void increment3() {
-    _count3++;
-    notifyListeners();
-  }
-
-//  @override
-//  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-//    // TODO: implement debugFillProperties
-//    super.debugFillProperties(properties);
-//    properties.add(IntProperty('count3', count3));
-//  }
 }
 
 class Count extends StatelessWidget {
@@ -70,6 +47,16 @@ class Count extends StatelessWidget {
         '${context.watch<Counter>().count}',
         style: Theme.of(context).textTheme.headline4
     );
+  }
+}
+
+class Counter2 with ChangeNotifier {
+  int _count3 = 0;
+  int get count3 => _count3;
+
+  void increment3() {
+    _count3++;
+    notifyListeners();
   }
 }
 
@@ -111,7 +98,7 @@ class AppPageState extends State<AppPage> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('测试Provier插件'),
+        title: Text('测试Provider插件'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -134,7 +121,7 @@ class AppPageState extends State<AppPage> {
             children: <Widget>[
               FlatButton(
                   onPressed: (){
-                    //通过这个setState发现三个组件的都被重新buil
+                    //通过这个setState发现三个组件的都被重新builder
                     setState(() {
 
                     });

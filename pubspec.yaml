@@ -23,17 +23,17 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  fluro: ^1.5.1
+  fluro: ^1.7.3
   path_provider: ^1.5.1
   # Toast插件 https://pub.flutter-io.cn/packages/oktoast
-  oktoast: ^2.2.0
+  oktoast: ^2.3.2
   json_annotation: ^3.0.1
   # webView ,flutter 官方维护的一个组件 https://pub.flutter-io.cn/packages/webview_flutter
   webview_flutter: ^0.3.22+1
   # 显示网络等待插件 https://pub.flutter-io.cn/packages/flutter_easyloading
-  flutter_easyloading: ^1.1.4
+  flutter_easyloading: ^2.0.0
   # 状态管理插件  https://pub.flutter-io.cn/packages/provider
-  provider: ^4.3.1
+  provider: ^4.3.2+2
   # bottomSheet https://pub.dev/packages/modal_bottom_sheet
   modal_bottom_sheet: ^0.2.0+1
 

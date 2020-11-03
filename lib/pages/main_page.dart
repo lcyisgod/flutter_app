@@ -65,8 +65,7 @@ class MainPageState extends State<MainPage> {
       bottomNavigationBar: BottomNavigationBar(
         // ignore: always_specify_types
         items:List.generate(
-            _appBarTitles.length,
-                (int i) => BottomNavigationBarItem(
+            _appBarTitles.length, (int i) => BottomNavigationBarItem(
               icon: _getTabIcon(i),
               title: _buildTabText(i),
             )),

@@ -4,6 +4,7 @@ class TestFlowDelegate extends FlowDelegate {
   TestFlowDelegate({this.margin});
   EdgeInsets margin = EdgeInsets.zero;
 
+  //布局子组件
   @override
   void paintChildren(FlowPaintingContext context) {
     double x = margin.left;
@@ -76,7 +77,7 @@ class WaterLayoutPage extends StatelessWidget {
                     //纵轴（垂直）方向间距
                     runSpacing: 4.0,
                     //沿主轴方向居中
-                    alignment: WrapAlignment.center,
+                    alignment: WrapAlignment.start,
                     children: <Widget>[
                       Chip(
                         label: const Text('Hamilton'),

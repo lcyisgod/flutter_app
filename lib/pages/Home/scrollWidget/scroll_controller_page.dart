@@ -11,7 +11,7 @@ class ScrollControllerPage extends StatefulWidget {
 class ScrollControllerPageState extends State<ScrollControllerPage> {
   ScrollController _scrollController = ScrollController(
     //初始滚动位置
-    initialScrollOffset: 100.0,
+    initialScrollOffset: 0.0,
     //是否存储滚动的位置信息，暂时没有理解在什么情况下使用
     keepScrollOffset: true
   );

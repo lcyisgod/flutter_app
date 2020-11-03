@@ -19,8 +19,8 @@ class BasicButtonPage extends StatelessWidget {
                 height: 44,
                 alignment: const Alignment(0, 0),
                 child: RaisedButton(
-                    onPressed: (){
-                      print('点击了RaisedButton');
+                  onPressed: () {
+                    print('点击了RaisedButton');
                     },
                   child: const Text('RaisedButton'),
                     ),
@@ -94,7 +94,7 @@ class BasicButtonPage extends StatelessWidget {
                     colorBrightness: Brightness.dark,
                     //水波纹颜色
                     //可以通过设置水波纹颜色透明来去除水波纹
-                    splashColor: Colors.grey,
+                    splashColor: Color(0x000000),
                     //外形
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)
@@ -105,6 +105,20 @@ class BasicButtonPage extends StatelessWidget {
                     child: const Text('自定义按钮')),
               ),
               const Divider(),
+              InkWell(
+                onTap: (){
+                  
+                },
+                splashColor: Colors.red,
+                focusColor: Colors.blue,
+                highlightColor: Colors.yellow,
+                child: Container(
+                  height: 50,
+                  width: 100,
+                  alignment: Alignment(0, 0),
+                  child: Text('按钮'),
+                ),
+              )
             ],
           ),
         ),
