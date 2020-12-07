@@ -21,6 +21,9 @@ class CustomScrollViewWidgetPageState extends State<CustomScrollViewWidgetPage> 
           SliverAppBar(
             pinned: true,
             expandedHeight: 250.0,
+            actions: [
+              IconButton(icon: Icon(Icons.add), onPressed: null)
+            ],
             flexibleSpace: FlexibleSpaceBar(
               title: const Text('CustomScrollView'),
               background: Image.network(
