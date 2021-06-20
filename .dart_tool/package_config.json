@@ -21,15 +21,15 @@
     },
     {
       "name": "async",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.5.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.6.1",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "boolean_selector",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-2.1.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/boolean_selector-2.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "build",
@@ -81,15 +81,15 @@
     },
     {
       "name": "characters",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/characters-1.1.0-nullsafety.3",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/characters-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "charcode",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/charcode-1.2.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/charcode-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "checked_yaml",
@@ -99,9 +99,9 @@
     },
     {
       "name": "clock",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/clock-1.1.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/clock-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "code_builder",
@@ -111,9 +111,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/collection-1.15.0-nullsafety.3",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/collection-1.15.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "convert",
@@ -147,9 +147,9 @@
     },
     {
       "name": "fake_async",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/fake_async-1.2.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/fake_async-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "file",
@@ -173,7 +173,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/liangchengyou/Downloads/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_easyloading",
@@ -191,7 +191,7 @@
       "name": "flutter_test",
       "rootUri": "file:///Users/liangchengyou/Downloads/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.12"
     },
     {
       "name": "glob",
@@ -261,15 +261,15 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/matcher-0.12.10-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/matcher-0.12.10",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.3.0-nullsafety.3",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/meta-1.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "mime",
@@ -279,9 +279,9 @@
     },
     {
       "name": "modal_bottom_sheet",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/modal_bottom_sheet-0.2.0+1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/modal_bottom_sheet-2.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "nested",
@@ -315,9 +315,9 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/path-1.8.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/path-1.8.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "path_provider",
@@ -413,7 +413,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/liangchengyou/Downloads/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "1.11"
+      "languageVersion": "2.12"
     },
     {
       "name": "source_gen",
@@ -423,21 +423,21 @@
     },
     {
       "name": "source_span",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.8.0-nullsafety.2",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.8.1",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/stack_trace-1.10.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/stack_trace-1.10.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/stream_channel-2.1.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/stream_channel-2.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "stream_transform",
@@ -447,21 +447,21 @@
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/string_scanner-1.1.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/string_scanner-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/term_glyph-1.2.0-nullsafety.1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/term_glyph-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/test_api-0.2.19-nullsafety.2",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/test_api-0.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "timing",
@@ -471,15 +471,15 @@
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/typed_data-1.3.0-nullsafety.3",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/typed_data-1.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/vector_math-2.1.0-nullsafety.3",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/vector_math-2.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "watcher",
@@ -495,9 +495,9 @@
     },
     {
       "name": "webview_flutter",
-      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/webview_flutter-0.3.22+1",
+      "rootUri": "file:///Users/liangchengyou/Downloads/flutter/.pub-cache/hosted/pub.flutter-io.cn/webview_flutter-2.0.7",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.12"
     },
     {
       "name": "xdg_directories",
@@ -518,7 +518,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-11-02T08:50:30.377989Z",
+  "generated": "2021-06-20T12:25:07.666302Z",
   "generator": "pub",
-  "generatorVersion": "2.10.2"
+  "generatorVersion": "2.13.0"
 }

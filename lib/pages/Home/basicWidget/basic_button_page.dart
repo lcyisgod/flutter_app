@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class BasicButtonPage extends StatelessWidget {
@@ -18,11 +20,18 @@ class BasicButtonPage extends StatelessWidget {
                 width: double.infinity,
                 height: 44,
                 alignment: const Alignment(0, 0),
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {
-                    print('点击了RaisedButton');
-                    },
-                  child: const Text('RaisedButton'),
+                    print('点击了ElevatedButton');
+                  },
+                  style: ButtonStyle(
+                    textStyle:MaterialStateProperty.all(
+                      TextStyle(
+
+                      )
+                    )
+                  ),
+                  child: const Text('ElevatedButton'),
                     ),
               ),
               const Divider(),
@@ -30,11 +39,11 @@ class BasicButtonPage extends StatelessWidget {
                 width: double.infinity,
                 height: 44,
                 alignment: const Alignment(0, 0),
-                child: FlatButton(
+                child: TextButton(
                   onPressed: (){
-                    print('点击了FlatButton');
+                    print('点击了TextButton');
                   },
-                  child: const Text('FlatButton'),
+                  child: const Text('TextButton'),
                 ),
               ),
               const Divider(),
@@ -42,11 +51,11 @@ class BasicButtonPage extends StatelessWidget {
                 width: double.infinity,
                 height: 44,
                 alignment: const Alignment(0, 0),
-                child: OutlineButton(
+                child: OutlinedButton(
                   onPressed: (){
-                    print('点击了OutlineButton');
+                    print('点击了OutlinedButton');
                   },
-                  child: const Text('OutlineButton'),
+                  child: const Text('OutlinedButton'),
                 ),
               ),
               const Divider(),
@@ -69,7 +78,7 @@ class BasicButtonPage extends StatelessWidget {
                 alignment: const Alignment(0, 0),
                 //RaisedButton、FlatButton、OutlineButton都有一个icon 构造函数
                 //通过它可以轻松创建带图标的按钮
-                child: FlatButton.icon(
+                child: TextButton.icon(
                     onPressed: (){
                       print('点击了警告');
                     },

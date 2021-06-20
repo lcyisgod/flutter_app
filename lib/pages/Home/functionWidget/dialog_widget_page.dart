@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/pages/Widget/action_item_widget.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class CustomerDialog extends Dialog {
@@ -180,11 +179,11 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
     int i = await showDialog(
         context: context,
         barrierDismissible: false,
-        child: CustomerDialog('提示', '这是一个自定义的对话框，一段对话框的内容是什么，需要经过测试', '取消', '确定', () {
-          Navigator.pop(context, 1);
-        }, () {
-          Navigator.pop(context, 2);
-        })
+        // child: CustomerDialog('提示', '这是一个自定义的对话框，一段对话框的内容是什么，需要经过测试', '取消', '确定', () {
+        //   Navigator.pop(context, 1);
+        // }, () {
+        //   Navigator.pop(context, 2);
+        // })
     );
 
     if (i != null) {
@@ -195,22 +194,22 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
   Future<void> showCustomerDialog2() async {
     int i = await showDialog(
         context: context,
-        child: ConstrainedBox(
-          constraints: BoxConstraints(maxHeight: 100),
-          child: Dialog(
-            child: ListView.builder(
-                itemExtent: 45,
-                itemCount: 10,
-                itemBuilder: (BuildContext context,int index){
-                  return ActionItemWidget(
-                    title: '$index',
-                    onPressed: (title) {
-                      Navigator.pop(context, index);
-                    },
-                  );
-                }),
-          ),
-        )
+        // child: ConstrainedBox(
+        //   constraints: BoxConstraints(maxHeight: 100),
+        //   child: Dialog(
+        //     child: ListView.builder(
+        //         itemExtent: 45,
+        //         itemCount: 10,
+        //         itemBuilder: (BuildContext context,int index){
+        //           return ActionItemWidget(
+        //             title: '$index',
+        //             onPressed: (title) {
+        //               Navigator.pop(context, index);
+        //             },
+        //           );
+        //         }),
+        //   ),
+        // )
     );
 
     if (i != null) {
@@ -282,7 +281,7 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
   Future<void> showBottomSheet() async {
     showMaterialModalBottomSheet(
         context: context,
-        builder: (BuildContext context,ScrollController controller){
+        builder: (BuildContext context){
           return Container(
             height: 100,
             color: Colors.red,

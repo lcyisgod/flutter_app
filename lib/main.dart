@@ -24,8 +24,11 @@ import 'pages/Home/functionWidget/dialog_widget_page.dart';
 import 'pages/Home/functionWidget/function_widget_page.dart';
 import 'pages/Home/functionWidget/inherited_widget_page.dart';
 import 'pages/Home/functionWidget/navigation_back_hold_page.dart';
+import 'pages/Home/functionWidget/normal_state_manager_page.dart';
+import 'pages/Home/functionWidget/provider_test2_page.dart';
 import 'pages/Home/functionWidget/provider_test_page.dart';
 import 'pages/Home/functionWidget/provider_widget_page.dart';
+import 'pages/Home/functionWidget/state_manager_page.dart';
 import 'pages/Home/layoutWidget/aligning_layout_page.dart';
 import 'pages/Home/layoutWidget/layout_widget_page.dart';
 import 'pages/Home/layoutWidget/line_layout_page.dart';
@@ -192,6 +195,9 @@ class MyAppState extends State<MyApp> {
                 '/GestureDisposePage': (BuildContext context) => GestureDisposePage(),
                 '/EventBusPage': (BuildContext context) => EventBusPage(),
                 '/NotificationPage': (BuildContext context) => NotificationPage(),
+                '/StateManagerPage': (BuildContext context) => StateManagerPage(),
+                '/NormalStateManagerPage': (BuildContext context) => NormalStateManagerPage(),
+                '/ProviderTest2Page': (BuildContext context) => ProviderTest2Page(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表

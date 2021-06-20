@@ -38,25 +38,45 @@ class Counter with ChangeNotifier {
   }
 }
 
+class Counter2 with ChangeNotifier {
+  int _count3 = 0;
+  int _count4 = 0;
+  int get count3 => _count3;
+  int get count4 => _count4;
+
+  void increment3() {
+    _count3++;
+    notifyListeners();
+  }
+
+  void increment4() {
+    _count4++;
+    notifyListeners();
+  }
+}
+
 class Count extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     print('第一个重新构建');
-    return Text(
-        '${context.watch<Counter>().count}',
-        style: Theme.of(context).textTheme.headline4
+    return Container(
+      child: Column(
+        children: [
+          Text(
+              '${context.watch<Counter>().count}',
+              style: Theme.of(context).textTheme.headline4
+          ),
+          Count2(),
+          FlatButton(
+              onPressed: (){
+                context.read<Counter>().increment2();
+              },
+              child: Text('测试内部影响外部')
+          )
+        ],
+      ),
     );
-  }
-}
-
-class Counter2 with ChangeNotifier {
-  int _count3 = 0;
-  int get count3 => _count3;
-
-  void increment3() {
-    _count3++;
-    notifyListeners();
   }
 }
 
@@ -95,22 +115,29 @@ class AppPage extends StatefulWidget {
 class AppPageState extends State<AppPage> {
   @override
   Widget build(BuildContext context) {
+    print('AppPage被重建');
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         title: Text('测试Provider插件'),
         centerTitle: true,
         actions: <Widget>[
+          //更新了第二个子组件
           IconButton(
               icon: Icon(Icons.add),
               onPressed: (){
                 context.read<Counter>().increment2();
-              })
+              }),
+          IconButton(
+            icon: Icon(Icons.add_a_photo),
+            onPressed: (){
+              Navigator.pushNamed(context, '/ProviderTest2Page');
+            })
         ],
       ),
+      //更新了第一个子组件
       floatingActionButton: FloatingActionButton(
         onPressed: () => context.read<Counter>().increment(),
-        tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
       body: SafeArea(
@@ -121,7 +148,7 @@ class AppPageState extends State<AppPage> {
             children: <Widget>[
               FlatButton(
                   onPressed: (){
-                    //通过这个setState发现三个组件的都被重新builder
+                    //调用setState方法导致整个组件都被更新
                     setState(() {
 
                     });
@@ -130,13 +157,20 @@ class AppPageState extends State<AppPage> {
               ),
               Count(),
               Count2(),
+              //更新第三个子组件
               FlatButton(
                   onPressed: (){
                     context.read<Counter2>().increment3();
                   },
                   child: Text('第三个按钮')
               ),
-              Count3()
+              Count3(),
+              FlatButton(
+                  onPressed: (){
+                    context.read<Counter2>().increment4();
+                  },
+                  child: Text('第四个按钮')
+              ),
             ],
           ),
         ),

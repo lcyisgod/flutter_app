@@ -10,7 +10,8 @@ class ShareDataWidget extends InheritedWidget {
     Widget child
   }) :super(child: child);
 
-  final int data; //需要在子树中共享的数据，保存点击次数
+  //需要在子树中共享的数据
+  final int data;
   final int data2;
   final bool testData;
 
@@ -23,12 +24,12 @@ class ShareDataWidget extends InheritedWidget {
   }
 
 
-  //该回调决定当data发生变化时,是否通知子树中依赖data的Widget
+  //该回调决定当组件中的数据发生变化时,是否通知子树中依赖data的Widget
   @override
   bool updateShouldNotify(ShareDataWidget oldWidget) {
     //如果返回true,则子树中依赖(build函数中有调用)本Widget
     //的子widget的`state.didChangeDependencies`会被调用
-    return oldWidget.data != data;
+    return oldWidget.data == data;
   }
 
 
@@ -73,7 +74,7 @@ class _TestWidgetState extends State<_TestWidget> {
     super.didChangeDependencies();
     //父或祖先widget中的InheritedWidget改变(updateShouldNotify返回true)时会被调用。
     //如果build中没有依赖InheritedWidget，则此回调不会被调用。
-    print("Dependencies change");
+    print("Dependencies change1");
   }
 }
 
@@ -89,7 +90,6 @@ class _TestWidget2 extends StatefulWidget {
 class _TestWidgetState2 extends State<_TestWidget2> {
   @override
   Widget build(BuildContext context) {
-    print('123');
     // TODO: implement build
     return Center(
       child: Column(
@@ -113,11 +113,14 @@ class _TestWidgetState2 extends State<_TestWidget2> {
     super.didChangeDependencies();
     //父或祖先widget中的InheritedWidget改变(updateShouldNotify返回true)时会被调用。
     //如果build中没有依赖InheritedWidget，则此回调不会被调用。
-    print("Dependencies change");
+    print("Dependencies change2");
   }
 }
 
 class _TestWidget3 extends StatefulWidget {
+  final int data;
+
+  const  _TestWidget3({Key key, this.data}) : super(key: key);
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -128,18 +131,34 @@ class _TestWidget3 extends StatefulWidget {
 class _TestWidget3State extends State<_TestWidget3> {
   @override
   Widget build(BuildContext context) {
-    print('333');
     // TODO: implement build
-    return Container(
-      child: Text('123'),
+    return TestWidget4(
+      data: widget.data,
     );
   }
+}
 
+class TestWidget4 extends StatefulWidget {
+  final int data;
+
+  const TestWidget4({Key key, this.data}) : super(key: key);
   @override
-  void didUpdateWidget(covariant _TestWidget3 oldWidget) {
-    // TODO: implement didUpdateWidget
-    super.didUpdateWidget(oldWidget);
-    print('3值变化');
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _TestWidget4State();
+  }
+}
+
+class _TestWidget4State extends State<TestWidget4> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Container(
+      color: Colors.red,
+      child: Text(
+       widget.data.toString()
+      )
+    );
   }
 }
 
@@ -170,8 +189,8 @@ class InheritedWidgetPageState extends State<InheritedWidgetPage> {
         onPressed: (){
           setState(() {
             // testData = !testData;
-            // ++count;
-            // ++count2;
+            ++count;
+            ++count2;
           });
         },
         child: Icon(Icons.add),
@@ -190,15 +209,18 @@ class InheritedWidgetPageState extends State<InheritedWidgetPage> {
               ),
               ShareDataWidget(
                 data: count,
-                child: _TestWidget(),
+                data2: count2,
+                child: Column(
+                  children: [
+                    _TestWidget(),
+                    _TestWidget2()
+                  ],
+                ),
               ),
-              _TestWidget3(),
-              Expanded(
-                  child: ShareDataWidget(
-                    data2: count2,
-                    child:_TestWidget2(),
-                  )
-              )
+              //如果不用ShareDataWidget，对于多层级组件需要一层层传递，增加了大量无用代码
+              _TestWidget3(
+                data: count,
+              ),
             ],
           ),
         ),

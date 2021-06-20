@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/Widget/action_item_widget.dart';
 
 class EventNotificationPage extends StatelessWidget {
-  final List<String> dataList = ['原始指针事件处理','手势识别','事件总线','通知'];
+  final List<String> dataList = ['原始指针事件处理','手势识别','通知'];
 
   void clickEvent(BuildContext context,String title) {
     if (title == '原始指针事件处理') {
