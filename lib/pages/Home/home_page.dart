@@ -116,10 +116,9 @@ class HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin<H
     } else if (title == '功能型组件') {
       Navigator.pushNamed(context, '/FunctionWidgetPage');
     } else if (title == '事件处理与通知') {
-      Navigator.pushNamed(context, '/EventNotificationPage');
+      Navigator.pushNamed(context, '/Event；NotificationPage');
     } else if (title == '生命周期相关') {
-      Map coordinates =  await Navigator.pushNamed(context, '/LifeCirclePage');
-      print(coordinates);
+      Navigator.pushNamed(context, '/LifeCirclePage');
     }
   }
 

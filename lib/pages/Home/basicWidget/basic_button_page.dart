@@ -118,7 +118,7 @@ class BasicButtonPage extends StatelessWidget {
                 onTap: (){
                   
                 },
-                splashColor: Colors.red,
+                splashColor: Color(0x000000),
                 focusColor: Colors.blue,
                 highlightColor: Colors.yellow,
                 child: Container(

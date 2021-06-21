@@ -23,6 +23,7 @@ class TestWidgetState extends State<TestWidget> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    print('build ------ 子Function');
     return Container(
       color: Colors.red,
       child: Text(widget.textStr??'')

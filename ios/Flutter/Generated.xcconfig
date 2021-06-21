@@ -1,8 +1,8 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/liangchengyou/Downloads/flutter
-FLUTTER_APPLICATION_PATH=/Users/liangchengyou/Desktop/flutter_app
+FLUTTER_ROOT=/Users/guanlizhanghu/Documents/flutter
+FLUTTER_APPLICATION_PATH=/Users/guanlizhanghu/Desktop/个人工程/flutter_app
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=/Users/liangchengyou/Desktop/flutter_app/lib/main.dart
+FLUTTER_TARGET=/Users/guanlizhanghu/Desktop/个人工程/flutter_app/lib/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
 FLUTTER_BUILD_NAME=1.0.0
@@ -12,4 +12,4 @@ DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRU
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=/Users/liangchengyou/Desktop/flutter_app/.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/guanlizhanghu/Desktop/个人工程/flutter_app/.dart_tool/package_config.json

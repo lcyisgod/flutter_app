@@ -75,7 +75,7 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                 //最大长度
                 //通过这种方式设置最大长度会在输入框右下角显示一个提示
                 //如果不想这么做可以在下一个属性中限制长度
-//                maxLength: 11,
+               // maxLength: 11,
                 //和maxLength结合使用，在达到最大长度时是否禁止操作
 //              maxLengthEnforced: true,
                 //输入框的一些样式，是一个数组
@@ -118,7 +118,7 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                                 width: 2
                         )
                     ),
-                    //非获取焦点时
+                    //获取焦点时
                     focusedBorder: OutlineInputBorder(
                       //外边框的弧度
                         borderRadius: BorderRadius.only(

@@ -38,6 +38,7 @@ import 'pages/Home/layoutWidget/water_layout_page.dart';
 import 'pages/Home/other/dart_basic_page.dart';
 import 'pages/Home/other/error_detail_page.dart';
 import 'pages/Home/other/more_thead_page.dart';
+import 'pages/Home/other/life_circle_page.dart';
 import 'pages/Home/scrollWidget/customscrollview_widget_page.dart';
 import 'pages/Home/scrollWidget/gridviewlist_widget_page.dart';
 import 'pages/Home/scrollWidget/listview_widget_page.dart';
@@ -198,6 +199,7 @@ class MyAppState extends State<MyApp> {
                 '/StateManagerPage': (BuildContext context) => StateManagerPage(),
                 '/NormalStateManagerPage': (BuildContext context) => NormalStateManagerPage(),
                 '/ProviderTest2Page': (BuildContext context) => ProviderTest2Page(),
+                '/LifeCirclePage': (BuildContext context) => LifeCirclePage(),
               },
               //在路由中做一些动态权限，如某些界面需要登录才能访问
               //使用onGenerateRoute时不能使用路由表
