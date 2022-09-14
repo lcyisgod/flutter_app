@@ -136,7 +136,7 @@ class ProviderWidgetPageState extends State<ProviderWidgetPage> {
         title: Text('实现一个简单的状态共享'),
         centerTitle: true,
         actions: <Widget>[
-          FlatButton(
+          TextButton(
               onPressed: (){
                 Navigator.pushNamed(context, '/ProviderTestPage');
               },
@@ -170,7 +170,7 @@ class ProviderWidgetPageState extends State<ProviderWidgetPage> {
                   }),
                   Builder(builder: (context){
                     print("RaisedButton build"); //在后面优化部分会用到
-                    return RaisedButton(
+                    return ElevatedButton(
                       child: Text("添加商品"),
                       onPressed: () {
                         //给购物车中添加商品，添加后总价会更新

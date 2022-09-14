@@ -49,7 +49,7 @@ class WebViewPageState extends State<WebViewPage> {
         title: Text(centerTitle??''),
         centerTitle: true,
         actions: <Widget>[
-          FlatButton(
+          TextButton(
               onPressed: (){
                 //会存储Widget树的状态,并在控制台打印输出
 //                debugDumpApp();
@@ -72,11 +72,9 @@ class WebViewPageState extends State<WebViewPage> {
         onPageFinished: (String url) {
           EasyLoading.dismiss();
           Toast.show('加载完成');
-          _controller.evaluateJavascript('document.title')
-              .then((String value){
-                setState(() {
-                  centerTitle = value;
-                });
+          _controller.runJavascript('document.title')
+              .then((value) => {
+
           });
         },
         onWebResourceError: (dynamic error) {

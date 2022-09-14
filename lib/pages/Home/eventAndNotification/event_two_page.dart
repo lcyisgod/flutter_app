@@ -21,7 +21,7 @@ class EventTwoPageState extends State<EventTwoPage> {
       ),
       body: SafeArea(
         child: Center(
-          child: FlatButton(
+          child: TextButton(
               onPressed: (){
                 bus.emit('login');
               }, 

@@ -34,8 +34,6 @@ class BasicFormPageState extends State<BasicFormPage> {
               padding: const EdgeInsets.symmetric(vertical: 16.0,horizontal: 24.0),
               child: Form(
                 key: _globalKey,
-                //开启自动校验
-                autovalidate: true,
                 //表单内容发生变化时调用
                 onChanged: (){
                   print('表单内容发生了变化');
@@ -85,7 +83,7 @@ class BasicFormPageState extends State<BasicFormPage> {
                       child: Row(
                         children: <Widget>[
                           Expanded(
-                            child: RaisedButton(
+                            child: ElevatedButton(
                               onPressed: (){
                                 // 通过_formKey.currentState 获取FormState后，
                                 // 调用validate()方法校验用户名密码是否合法，校验
@@ -97,7 +95,6 @@ class BasicFormPageState extends State<BasicFormPage> {
                                 }
                               },
                               child: const Text('登录'),
-                              color: Theme.of(context).primaryColor,
                             ),
                           )
                         ],

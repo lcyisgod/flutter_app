@@ -19,8 +19,10 @@ class DateOperatePageState extends State<DateOperatePage> {
         child: Center(
           child: Container(
             color: Colors.white,
-            child: FlatButton(
-                onPressed: (){},
+            child: TextButton(
+                onPressed: (){
+
+                },
                 child: Text('操作数据库')
             ),
           ),

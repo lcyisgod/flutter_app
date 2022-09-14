@@ -103,7 +103,7 @@ class LimitSizeWidgetPage extends StatelessWidget {
                         )
                       ]
                     ),
-                    child: FlatButton(
+                    child: TextButton(
                         onPressed: (){
                           Toast.show('装饰按钮');
                         },

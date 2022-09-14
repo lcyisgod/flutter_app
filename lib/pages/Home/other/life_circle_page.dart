@@ -75,7 +75,7 @@ class LifeCirclePageState extends State<LifeCirclePage> {
         child:Center(
           child: Column(
             children: [
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     setState(() {
                       testStr = '按下按下按下按下按下按下按下';

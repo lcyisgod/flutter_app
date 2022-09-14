@@ -45,7 +45,7 @@ class NavWidgetPageState extends State<NavWidgetPage> with SingleTickerProviderS
         centerTitle: true,
         //右侧组件
         actions: <Widget>[
-          FlatButton(
+          TextButton(
               onPressed: (){
                 Toast.show('点击了右侧按钮');
               },

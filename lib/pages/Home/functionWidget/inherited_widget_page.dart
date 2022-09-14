@@ -58,7 +58,7 @@ class _TestWidgetState extends State<_TestWidget> {
         children: <Widget>[
           //使用InheritedWidget的状态
           Text(ShareDataWidget.of(context).data.toString()),
-          FlatButton(
+          TextButton(
               onPressed: (){
                 ShareDataWidget.of(context).increment();
               },
@@ -97,7 +97,7 @@ class _TestWidgetState2 extends State<_TestWidget2> {
         children: <Widget>[
           //使用InheritedWidget的状态
           Text(ShareDataWidget.of(context).data2.toString()),
-          FlatButton(
+          TextButton(
               onPressed: (){
                 ShareDataWidget.of(context).increment();
               },

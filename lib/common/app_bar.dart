@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -98,7 +97,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                                   ),
                                 ),
                               ))
-                        : FlatButton(
+                        : TextButton(
                             onPressed: onPressend,
                             child: Text(
                               actionName,

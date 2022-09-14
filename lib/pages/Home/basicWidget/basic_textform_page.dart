@@ -163,7 +163,7 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                   ),
                 ),
               ),
-              FlatButton(
+              TextButton(
                 onPressed: () {
                   focusScopeNode ??= FocusScope.of(context);
                   if(focusNode.hasFocus){
@@ -175,7 +175,7 @@ class BasicTextFormPageState extends State<BasicTextFormPage> {
                 },
                 child: const Text('移动焦点'),
               ),
-              FlatButton(
+              TextButton(
                 onPressed: () {
                   //失去焦点
                   focusNode.unfocus();

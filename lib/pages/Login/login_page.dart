@@ -18,7 +18,7 @@ class LoginPageState extends State<LoginPage>{
       body: new Center(
         child: new Container(
           color: Colors.white,
-          child: new FlatButton(
+          child: TextButton(
               onPressed: (){
                 Navigator.pushNamedAndRemoveUntil(context, '/Home', (route) => route == null);
               }, 

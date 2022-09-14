@@ -33,7 +33,7 @@ class GestureDisposePageState extends State<GestureDisposePage> {
         title: Text('手势处理'),
         centerTitle: true,
         actions: <Widget>[
-          FlatButton(
+          TextButton(
               onPressed: (){
                 Navigator.push(
                     context,

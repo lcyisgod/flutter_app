@@ -29,7 +29,7 @@ class EventBusPageState extends State<EventBusPage> {
         title: Text('全局事物总线'),
         centerTitle: true,
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             onPressed: (){
               Navigator.push(
                   context,

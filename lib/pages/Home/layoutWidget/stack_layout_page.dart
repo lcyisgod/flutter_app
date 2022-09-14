@@ -25,11 +25,6 @@ class StackLayoutPage extends StatelessWidget {
             //StackFit.loose表示使用子组件的大小
             //StackFit.expand表示扩伸到Stack的大小
             fit: StackFit.loose,
-            //此属性决定如何显示超出Stack显示空间的子组件；
-            //值为Overflow.clip时，超出部分会被剪裁（隐藏）
-            //值为Overflow.visible 时则不会
-            //尝试了一下 没有看出两者有什么区别
-            overflow: Overflow.clip,
             children: <Widget>[
               Container(
                 child: Text(

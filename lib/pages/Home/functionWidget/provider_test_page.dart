@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -68,7 +67,7 @@ class Count extends StatelessWidget {
               style: Theme.of(context).textTheme.headline4
           ),
           Count2(),
-          FlatButton(
+          TextButton(
               onPressed: (){
                 context.read<Counter>().increment2();
               },
@@ -146,7 +145,7 @@ class AppPageState extends State<AppPage> {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     //调用setState方法导致整个组件都被更新
                     setState(() {
@@ -158,14 +157,14 @@ class AppPageState extends State<AppPage> {
               Count(),
               Count2(),
               //更新第三个子组件
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     context.read<Counter2>().increment3();
                   },
                   child: Text('第三个按钮')
               ),
               Count3(),
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     context.read<Counter2>().increment4();
                   },

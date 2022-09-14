@@ -67,7 +67,7 @@ class MainPageState extends State<MainPage> {
         items:List.generate(
             _appBarTitles.length, (int i) => BottomNavigationBarItem(
               icon: _getTabIcon(i),
-              title: _buildTabText(i),
+              label: _appBarTitles[i],
             )),
         currentIndex: _currentIndex,
         fixedColor: Colors.blue,

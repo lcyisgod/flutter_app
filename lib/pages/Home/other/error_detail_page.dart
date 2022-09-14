@@ -21,7 +21,7 @@ class ErrorDetailPageState extends State<ErrorDetailPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     //使用try-catch捕获同步异常
                     try {
@@ -34,7 +34,7 @@ class ErrorDetailPageState extends State<ErrorDetailPage> {
                   },
                   child: const Text('捕获同步异常')
               ),
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     // ignore: always_specify_types
                     Future.delayed(
@@ -50,7 +50,7 @@ class ErrorDetailPageState extends State<ErrorDetailPage> {
                   },
                   child: const Text('捕获异步异常')
               ),
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     final List<String> dataList = <String>['1','2'];
                     print(dataList[2]);

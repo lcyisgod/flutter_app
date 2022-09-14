@@ -24,7 +24,8 @@ class MoreThreadPageState extends State<MoreThreadPage> {
       print('>>>>>>$value');
     }).then((value) {
       print('测试多个then操作');
-    }).catchError((){///处理失败的请求
+    }).catchError((value){
+      ///处理失败的请求
       print('错误');
     });
     return title;
@@ -90,16 +91,17 @@ class MoreThreadPageState extends State<MoreThreadPage> {
               Container(
                 width: double.infinity,
                 height: 44,
-                child: FlatButton(onPressed: () {
-                  testWidget(0);
-                  print('888');
+                child: TextButton(
+                    onPressed: () {
+                      testWidget(0);
+                      print('888');
                 }, child: Text('点击1')),
               ),
               Divider(),
               Container(
                 width: double.infinity,
                 height: 44,
-                child: FlatButton(
+                child: TextButton(
                     onPressed: (){
                       testWidget(2);
                     },
@@ -109,7 +111,7 @@ class MoreThreadPageState extends State<MoreThreadPage> {
               Container(
                 width: double.infinity,
                 height: 44,
-                child: FlatButton(
+                child: TextButton(
                     onPressed: (){
                       testWidget(1);
                     },
@@ -119,7 +121,7 @@ class MoreThreadPageState extends State<MoreThreadPage> {
               Container(
                 width: double.infinity,
                 height: 44,
-                child: FlatButton(
+                child: TextButton(
                     onPressed: (){
                       testAsync('测试异步').then((value){
                         print('对异步请求结果的回调内容:$value');
@@ -131,7 +133,7 @@ class MoreThreadPageState extends State<MoreThreadPage> {
               Container(
                 width: double.infinity,
                 height: 44,
-                child: FlatButton(
+                child: TextButton(
                     onPressed: (){
                       testAsync2().then((value){
                         print('测试无返回值的异步操作结果:$value');

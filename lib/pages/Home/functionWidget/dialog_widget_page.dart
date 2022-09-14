@@ -76,7 +76,7 @@ class CustomerDialog extends Dialog {
                 children: <Widget>[
                   Expanded(
                       flex: 1,
-                      child: FlatButton(
+                      child: TextButton(
                           onPressed: cancelTap,
                           child: Text(
                             cancelTitle,
@@ -91,7 +91,7 @@ class CustomerDialog extends Dialog {
                   ),
                   Expanded(
                       flex: 1,
-                      child: FlatButton(
+                      child: TextButton(
                           onPressed: ensureTap,
                           child: Text(
                             ensureTitle,
@@ -126,12 +126,12 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
             title: Text('提示'),
             content: Text('这是一个确认文本'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
                   child: Text('取消')),
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.pop(context, true);
                   },
@@ -225,12 +225,12 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
             title: Text('提示'),
             content: Text('这是一个确认文本'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     Navigator.pop(context);
                   }, child: Text('取消')
               ),
-              FlatButton(
+              TextButton(
                   onPressed: (){
                     Navigator.pop(context);
                   },
@@ -303,43 +303,43 @@ class DialogWidgetPageState extends State<DialogWidgetPage> {
           padding: EdgeInsets.only(top: 20),
           child: Column(
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                   onPressed: () {
                     showSystemAlertDialog();
                   },
                   child: Text('AlertDialog')),
-              RaisedButton(
+              ElevatedButton(
                   onPressed: () {
                     showSimpleDialog();
                   },
                   child: Text('SimpleDialog')),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   showCustomerDialog();
                 },
                 child: Text('自定义对话框'),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   showCustomerDialog2();
                 },
                 child: Text('自定义对话框2'),
               ),
               Text('iOS风格对话框'),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   showIOSDialog();
                 },
                 child: Text('iOS对话框'),
               ),
               Text('定义对话框动画弹出'),
-              RaisedButton(
+              ElevatedButton(
                   onPressed: (){
                     showGeneraDialog();
                   },
                 child: Text('弹框动画测试'),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: (){
                   showBottomSheet();
                 },

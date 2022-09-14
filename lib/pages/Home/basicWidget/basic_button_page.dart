@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class BasicButtonPage extends StatelessWidget {
@@ -92,22 +90,7 @@ class BasicButtonPage extends StatelessWidget {
                 height: 44,
                 alignment: const Alignment(0, 0),
                 //自定义按钮样式
-                child: FlatButton(
-                    textColor: Colors.white,
-                    //背景色
-                    //透明背景色Color(0x000000)
-                    color: Colors.blue,
-                    //按下时的背景色
-                    highlightColor: Colors.blue[700],
-                    //按钮主题
-                    colorBrightness: Brightness.dark,
-                    //水波纹颜色
-                    //可以通过设置水波纹颜色透明来去除水波纹
-                    splashColor: Color(0x000000),
-                    //外形
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20.0)
-                    ),
+                child: TextButton(
                     onPressed: (){
                       print('自定义按钮');
                     },

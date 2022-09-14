@@ -37,7 +37,7 @@ class NotificationPageState extends State<NotificationPage> {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Builder(builder: (context){
-                      return RaisedButton(
+                      return ElevatedButton(
                         onPressed: ()=>MyNotification('Hi').dispatch(context),
                         child: Text("Send Notification"),
                       );
