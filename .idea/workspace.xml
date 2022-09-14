@@ -6,86 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a611ff07-2a8f-4bc6-a92b-13ea4442b756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/path_provider" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.symlinks/plugins/webview_flutter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Flutter.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Flutter.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Local Podspecs/Flutter.podspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Local Podspecs/Flutter.podspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/Flutter.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/Flutter.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/Pods-Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/Pods-Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/path_provider.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/webview_flutter.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/xcuserdata/liangchengyou.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/path_provider/path_provider.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/webview_flutter/webview_flutter.release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/liangchengyou.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/liangchengyou.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Info-Debug.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/app_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/app_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_button_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_button_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_form_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_form_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_textform_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_textform_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/webview_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/webview_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_bus_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/event_two_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/gesture_dispose_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/eventAndNotification/notification_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/functionWidget/dialog_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/functionWidget/dialog_widget_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/functionWidget/inherited_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/functionWidget/inherited_widget_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/functionWidget/provider_test_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/functionWidget/provider_test_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/functionWidget/provider_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/functionWidget/provider_widget_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/layoutWidget/stack_layout_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/layoutWidget/stack_layout_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/other/error_detail_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/other/error_detail_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/other/life_circle_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/other/life_circle_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/other/more_thead_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/other/more_thead_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/limit_size_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/limit_size_widget_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/nav_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/nav_widget_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/Login/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Login/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/data_oper_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/data_oper_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_container.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_widget_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/basicWidget/basic_widget_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/drawer_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Home/vesselWidget/drawer_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/Mine/my_pagee.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/Mine/my_pagee.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>

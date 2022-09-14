@@ -23,13 +23,13 @@ class BasicContainerPageState extends State<BasicContainerPage> {
             const Text('Container类似于iOS的UIView'),
             Container(
               //背景色
-//        color: Colors.red,
+              // color: Colors.red,
               //高度
               height: 100,
               //宽度
               width: double.infinity,
               //设置一些指定制定属性
-              //设置制定属性时背景色在这路设置
+              //设置制定属性时背景色在这里设置
               decoration: const BoxDecoration(
                 //边框角度
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),

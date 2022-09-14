@@ -56,7 +56,7 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
                   itemBuilder: (_, int index) {
                     return InkWell(
                       onTap: (){
-//                        deleteData(index);
+//                       deleteData(index);
                       changeData(index);
                       },
                       child: Container(
@@ -89,7 +89,7 @@ class MyPageState extends State<MyPage> with AutomaticKeepAliveClientMixin<MyPag
 
   @override
   void dispose() {
-    print('销毁邮件界面');
+    print('销毁新闻界面');
     super.dispose();
   }
 

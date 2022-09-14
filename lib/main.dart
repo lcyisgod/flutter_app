@@ -76,7 +76,6 @@ void main() {
     ..maskType = EasyLoadingMaskType.clear;
 
   FlutterError.onError = (FlutterErrorDetails details) async {
-//    FlutterError.dumpErrorToConsole(details);
     Zone.current.handleUncaughtError(details.exception, details.stack);
   };
 
@@ -137,8 +136,6 @@ class MyAppState extends State<MyApp> {
                 primarySwatch: Colors.teal,
                 //主色，决定导航栏颜色
                 primaryColor: Colors.orange,
-                //次级色，决定大多数Widget的颜色，如进度条、开关等
-                accentColor: Colors.black54,
                 //卡片颜色
                 cardColor: Colors.cyan,
                 //分割线颜色
@@ -224,7 +221,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Future<void> startTime() async{
     const Duration duration = Duration(seconds: 1);
-    return  Timer(duration, navigationPage);
+    return Timer(duration, navigationPage);
   }
 
   Future<void> navigationPage() async {

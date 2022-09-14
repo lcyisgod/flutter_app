@@ -41,9 +41,7 @@ class BasicWidgetPage extends StatelessWidget{
                 itemBuilder: (BuildContext context,int index){
                   final String title = dataList[index];
                   return InkWell(
-                    onTap: (){
-                      clickEvent(context, title);
-                      },
+                    onTap: () {clickEvent(context, title);},
                     child: Container(
                       height: 45,
                       child: Column(

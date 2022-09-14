@@ -20,7 +20,7 @@ class MyDrawer extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: ClipOval(
                         child: Image.network(
-                          'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=7428308,2994758752&fm=26&gp=0.jpg',
+                          'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fdb0787e62730176883cbd1c03557d4f3f13905b7.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665732801&t=e998e43670eba59f4aef2a6cb72e6516',
                           width: 80,
                           height: 80,
                           fit: BoxFit.fill,

@@ -36,6 +36,8 @@ dependencies:
   provider: ^6.0.3
   # bottomSheet https://pub.dev/packages/modal_bottom_sheet
   modal_bottom_sheet: ^2.1.2
+  # 网络请求插件 https://pub.dev/packages/dio
+  dio: ^4.0.6
 
 dev_dependencies:
   build_runner:

@@ -13,7 +13,7 @@ class MainPageState extends State<MainPage> {
   int _currentIndex = 0;
   List<Widget> _pageList;
   List<List<Widget>> _tabImages;
-  final List<String> _appBarTitles = <String>['Home', 'Email'];
+  final List<String> _appBarTitles = <String>['首页', '新闻'];
   final PageController _pageController = PageController();
 
   Widget _buildTabText(int curIndex) {
@@ -41,7 +41,7 @@ class MainPageState extends State<MainPage> {
     super.initState();
     _pageList = <Widget>[
       const HomePage(title: '首页',),
-      const MyPage(title: '邮件',)
+      const MyPage(title: '新闻',)
     ];
 
     _tabImages = <List<Widget>>[
